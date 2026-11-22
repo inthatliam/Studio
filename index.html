@@ -1,0 +1,4104 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="dark"><head><script data-bard-client-injected="true">(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjExNjRiNzdiNDMzZDdhMDAyMWI4NjE4YjhjYTU3ZTMyZGI5MWUxMTMiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIwNzY0MTc3MDk4MzUyMzAxNTQ3NSIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjXzg2Y2Y1NTZiZTAxMjk3OWNfaW5kZXguaHRtbC03NTgifSwiZXhwIjoxNzk1MzUxMjY0LCJpYXQiOjE3OTUzNDc2NjQsImFsZyI6IlJTMjU2In0.OzY3PznSpf86gGqqyJfT6SY5UrDUQVs_cFxuG8qcpIUNn4gfi32us1THx6CE41i881OWrcGyBoEVzixc_35GXhTO3Ili0tZR7CQr2euWLJsOIUmPVPT1NWNeTCB_g3KEBHRVuCCVXBSJyN-7u4qfTfmGi5-S5Ommhjoafa_oUwP9u6S9hW0H1SSRYymx-PM7MUo0tNZToHyMaPJcbLtsJzLFVB99SG8PdVnHd_3TdGO4udFsOlJxsC3yEyx3QL8EbDXGZDlG0V0FjotTY0oYnpLh83N7LUllwIq5WDuRkWd-nSp9Gjk0wkD2OD1KT3VMfxr6czwJsS34Kcn1kAhxjg","c_86cf556be012979c_index.html-758")</script><script data-bard-client-injected="true">
+  document.addEventListener('input', (event) => {
+    if (event.target && (event.target.isContentEditable || event.target.hasAttribute('contenteditable'))) {
+      const clonedDoc = document.cloneNode(true);
+      const injectedScripts = clonedDoc.querySelectorAll('[data-bard-client-injected="true"]');
+      injectedScripts.forEach(el => el.remove());
+      window.parent.postMessage({
+        type: 'inlineEdit',
+        html: '<!DOCTYPE html>\n' + clonedDoc.documentElement.outerHTML
+      }, '*');
+    }
+  });
+</script><script data-bard-client-injected="true">(function(){'use strict';window.addEventListener("message",a=>{a.data&&a.data.type==="SUPPLEMENTAL_DATA_UPDATE"&&window.dispatchEvent(new CustomEvent("supplementaldataupdate",{detail:a.data.data}))});}).call(this);
+</script><script data-bard-client-injected="true">(function(){'use strict';var k=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function m(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var q=m(this);
+function r(a,b){if(b)a:{var d=q;a=a.split(".");for(var c=0;c<a.length-1;c++){var e=a[c];if(!(e in d))break a;d=d[e]}a=a[a.length-1];c=d[a];b=b(c);b!=c&&b!=null&&k(d,a,{configurable:!0,writable:!0,value:b})}}function t(a){function b(c){return a.next(c)}function d(c){return a.throw(c)}return new Promise(function(c,e){function f(g){g.done?c(g.value):Promise.resolve(g.value).then(b,d).then(f,e)}f(a.next())})}function u(a){return t(a())}
+r("Object.values",function(a){return a?a:function(b){var d=[],c;for(c in b)Object.prototype.hasOwnProperty.call(b,c)&&d.push(b[c]);return d}});r("Array.prototype.includes",function(a){return a?a:function(b,d){var c=this;c instanceof String&&(c=String(c));var e=c.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=c[d];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function v(a,b){var d=a.style;b.backgroundColor&&(d.backgroundColor=b.backgroundColor);b.width&&(d.width=`${b.width}px`);b.height&&(d.height=`${b.height}px`);var c=b.style;c!=null&&Object.keys(c).forEach(e=>{d[e]=c[e]})};var aa=(()=>{var a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){var b=[];for(let d=0,c=a.length;d<c;d++)b.push(a[d]);return b}let y=null;function z(a={}){return y?y:a.u?y=a.u:y=w(window.getComputedStyle(document.documentElement))}function A(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function B(a,b={}){var d;if(!(d=b.width)){d=A(a,"border-left-width");var c=A(a,"border-right-width");d=a.clientWidth+d+c}(b=b.height)||(b=A(a,"border-top-width"),c=A(a,"border-bottom-width"),b=a.clientHeight+b+c);return{width:d,height:b}}function C(a){return new Promise((b,d)=>{var c=new Image;c.onload=()=>{c.decode().then(()=>{requestAnimationFrame(()=>b(c))})};c.onerror=d;c.crossOrigin="anonymous";c.decoding="async";c.src=a})}
+function ba(a){return u(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function ca(a,b,d){return u(function*(){var c=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");c.setAttribute("width",`${b}`);c.setAttribute("height",`${d}`);c.setAttribute("viewBox",`0 0 ${b} ${d}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");c.appendChild(e);e.appendChild(a);return ba(c)})}
+var D=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||D(a,b)};function da(a,b){return z(b).map(d=>{var c=a.getPropertyValue(d),e=a.getPropertyPriority(d);return`${d}: ${c}${e?" !important":""};`}).join(" ")}
+function E(a,b,d,c){a=window.getComputedStyle(a,d);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=aa();try{b.className=`${b.className} ${f}`}catch(h){return}e=document.createElement("style");var g=e.appendChild;d=`.${f}:${d}`;a.cssText?(c=a.getPropertyValue("content"),c=`${a.cssText} content: '${c.replace(/'|"/g,"")}';`):c=da(a,c);g.call(e,document.createTextNode(`${d}{${c}}`));b.appendChild(e)}};function F(a){return a.search(/^(data:)/)!==-1}function G(a,b,d){return u(function*(){var c=yield fetch(a,b);if(c.status===404)throw Error(`Resource "${c.url}" not found`);var e=yield c.blob();return new Promise((f,g)=>{var h=new FileReader;h.onerror=g;h.onloadend=()=>{try{f(d({v:c,result:h.result}))}catch(l){g(l)}};h.readAsDataURL(e)})})}const H={};function ea(a,b,d){var c=a.replace(/\?.*/,"");d&&(c=a);/ttf|otf|eot|woff2?/i.test(c)&&(c=c.replace(/.*\//,""));return b?`[${b}]${c}`:c}
+function I(a,b,d){return u(function*(){var c=ea(a,b,d.F);if(H[c]!=null)return H[c];d.B&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());try{let f=yield G(a,d.l,({v:g,result:h})=>{b||(b=g.headers.get("Content-Type")||"");return h.split(/,/)[1]});var e=`data:${b};base64,${f}`}catch(f){e=d.o||""}return H[c]=e})};const J={R:"application/font-woff",S:"application/font-woff",O:"application/font-truetype",C:"application/vnd.ms-fontobject",J:"image/png",H:"image/jpeg",G:"image/jpeg",D:"image/gif",N:"image/tiff",M:"image/svg+xml",P:"image/webp"};function K(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function fa(a){return u(function*(){var b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):C(b)})}function ha(a,b){return u(function*(){if(a.currentSrc){var d=document.createElement("canvas");let c=d.getContext("2d");d.width=a.clientWidth;d.height=a.clientHeight;c==null||c.drawImage(a,0,0,d.width,d.height);d=d.toDataURL();return C(d)}d=a.poster;d=yield I(d,J[K(d).toLowerCase()]||"",b);return C(d)})}
+function ia(a,b){return u(function*(){try{let d;if(a==null?0:(d=a.contentDocument)==null?0:d.body)return yield L(a.contentDocument.body,b,!0)}catch(d){}return a.cloneNode(!1)})}function ja(a,b){return u(function*(){return D(a,HTMLCanvasElement)?fa(a):D(a,HTMLVideoElement)?ha(a,b):D(a,HTMLIFrameElement)?ia(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function ka(a,b,d){return u(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;var c=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)c=w(a.assignedNodes());else{let e;if(D(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))c=w(a.contentDocument.body.childNodes);else{let f;c=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(c.length===0||D(a,HTMLVideoElement))return b;yield c.reduce((e,f)=>e.then(()=>L(f,d)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function la(a,b,d){var c=b.style;if(c){var e=window.getComputedStyle(a);e.cssText?(c.cssText=e.cssText,c.transformOrigin=e.transformOrigin):z(d).forEach(f=>{var g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);D(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);c.setProperty(f,g,e.getPropertyPriority(f))})}}
+function ma(a,b){D(a,HTMLSelectElement)&&(b=Array.from(b.children).find(d=>a.value===d.getAttribute("value")))&&b.setAttribute("selected","")}
+function na(a,b){return u(function*(){var d=a.querySelectorAll?a.querySelectorAll("use"):[];if(d.length===0)return a;var c={};for(var e=0;e<d.length;e++){var f=d[e].getAttribute("xlink:href");if(f){let g=document.querySelector(f);a.querySelector(f)||!g||c[f]||(c[f]=yield L(g,b,!0))}}d=Object.values(c);if(d.length){c=document.createElementNS("http://www.w3.org/1999/xhtml","svg");c.setAttribute("xmlns","http://www.w3.org/1999/xhtml");c.style.position="absolute";c.style.width="0";c.style.height="0";
+c.style.overflow="hidden";c.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");c.appendChild(e);for(f=0;f<d.length;f++)e.appendChild(d[f]);a.appendChild(c)}return a})}
+function L(a,b,d){return u(function*(){return d||!b.filter||b.filter(a)?Promise.resolve(a).then(c=>ja(c,b)).then(c=>ka(a,c,b)).then(c=>{D(c,Element)&&(la(a,c,b),E(a,c,":before",b),E(a,c,":after",b),D(a,HTMLTextAreaElement)&&(c.textContent=a.value),D(a,HTMLInputElement)&&c.setAttribute("value",a.value),ma(a,c));return c}).then(c=>na(c,b)):null})};const M=/url\((['"]?)([^'"]+?)\1\)/g,oa=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,pa=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function qa(a){var b=[];a.replace(M,(d,c,e)=>{b.push(e);return d});return b.filter(d=>!F(d))}
+function ra(a,b,d,c){return u(function*(){try{let e=d?(new URL(b,d||void 0)).toString():b,f;f=yield I(e,J[K(b).toLowerCase()]||"",c);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function sa(a,{K:b}){return b?a.replace(pa,d=>{for(;;){let [c,,e]=oa.exec(d)||[];if(!e)return"";if(e===b)return`src: ${c};`}}):a}
+function N(a,b,d){return u(function*(){if(a.search(M)===-1)return a;var c=sa(a,d);return qa(c).reduce((e,f)=>e.then(g=>ra(g,f,b,d)),Promise.resolve(c))})};function O(a,b,d){return u(function*(){var c,e=(c=b.style)==null?void 0:c.getPropertyValue(a);return e?(c=yield N(e,null,d),b.style.setProperty(a,c,b.style.getPropertyPriority(a)),!0):!1})}function ta(a,b){return u(function*(){(yield O("background",a,b))||(yield O("background-image",a,b));(yield O("mask",a,b))||(yield O("-webkit-mask",a,b))||(yield O("mask-image",a,b))||(yield O("-webkit-mask-image",a,b))})}
+function ua(a,b){return u(function*(){var d=D(a,HTMLImageElement);if(d&&!F(a.src)||D(a,SVGImageElement)&&!F(a.href.baseVal)){var c=d?a.src:a.href.baseVal,e=yield I(c,J[K(c).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.h?(...h)=>{try{f(b.h(...h))}catch(l){g(l)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");d?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function va(a,b){return u(function*(){var d=w(a.childNodes).map(c=>P(c,b));yield Promise.all(d).then(()=>a)})}function P(a,b){return u(function*(){D(a,Element)&&(yield ta(a,b),yield ua(a,b),yield va(a,b))})};const Q={};function R(a){return u(function*(){var b=Q[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return Q[a]=b})}function S(a,b){return u(function*(){var d=a.cssText,c=/url\(["']?([^"')]+)["']?\)/g,e=(d.match(/url\([^)]+\)/g)||[]).map(f=>u(function*(){var g=f.replace(c,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return G(g,b.l,({result:h})=>{d=d.replace(f,`url(${h})`);return[f,h]})}));return Promise.all(e).then(()=>d)})}
+function T(a){if(a==null)return[];var b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var d=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var c=d.exec(a);if(c===null)break;b.push(c[0])}a=a.replace(d,"");d=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(c=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=d.exec(a);if(e===null)if(e=c.exec(a),e===null)break;else d.lastIndex=c.lastIndex;else c.lastIndex=
+d.lastIndex;b.push(e[0])}return b}
+function wa(a,b){return u(function*(){var d=[],c=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let h=g+1;f=R(f.href).then(l=>S(l,b)).then(l=>T(l).forEach(p=>{try{e.insertRule(p,p.startsWith("@import")?h+=1:e.cssRules.length)}catch(x){}})).catch(()=>{});c.push(f)}})}catch(f){let g=a.find(h=>h.href==null)||document.styleSheets[0];e.href!=null&&c.push(R(e.href).then(h=>S(h,b)).then(h=>T(h).forEach(l=>{g.insertRule(l,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(c).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{d.push(f)})}catch(f){}});return d})})}function xa(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(M)!==-1)}function ya(a,b){return u(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var d=yield wa(w(a.ownerDocument.styleSheets),b);return xa(d)})}
+function za(a){function b(c){(c.style.fontFamily||getComputedStyle(c).fontFamily).split(",").forEach(e=>{d.add(e.trim().replace(/["']/g,""))});Array.from(c.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}var d=new Set;b(a);return d}function Aa(a,b){return u(function*(){var d=yield ya(a,b),c=za(a);return(yield Promise.all(d.filter(e=>c.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>N(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function Ba(a,b){return u(function*(){var d=b.m!=null?b.m:b.A?null:yield Aa(a,b);if(d){let c=document.createElement("style");c.appendChild(document.createTextNode(d));a.firstChild?a.insertBefore(c,a.firstChild):a.appendChild(c)}})};function Ca(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield L(a,b,!0);yield Ba(e,b);yield P(e,b);v(e,b);return yield ca(e,d,c)})}
+function Da(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield Ca(a,b);e=yield C(e);var f=document.createElement("canvas"),g=f.getContext("2d"),h=b.I||window.devicePixelRatio||1,l=b.j||d,p=b.i||c;f.width=l*h;f.height=p*h;!b.L&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384));
+f.style.width=`${l}`;f.style.height=`${p}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function Ea(a,b={}){return u(function*(){return(yield Da(a,b)).toDataURL()})};const Fa=["gemini.google.com","corp.google.com","proxy.googlers.com"];function V(a){a=Number(a.replace(/px$/,""));return Number.isFinite(a)?a:0}function W(){return document.body.querySelectorAll('[class*="animate"]').length>0}function X(a,b){var d=document.createElement("canvas");d.width=a;d.height=b;return d.toDataURL("image/png")}const Y=X(1,1);
+function Z(a,b){return u(function*(){var d=Math.max(b?b.width:a.offsetWidth,1),c=Math.max(b?b.height:a.offsetHeight,1),e=HTMLCanvasElement.prototype.toDataURL;b&&(HTMLCanvasElement.prototype.toDataURL=function(f,g){var h;if(h=this.isConnected&&a.contains(this)){{let n=this.getBoundingClientRect();if(n.width===0||n.height===0)h=!1;else if(window.getComputedStyle(this).position==="fixed")h=n.bottom>0&&n.top<b.height&&n.right>0&&n.left<b.width;else{h=a.getBoundingClientRect();var l=n.top-h.top,p=n.left-
+h.left,x=n.right-h.left;h=n.bottom-h.top>b.scrollTop&&l<b.scrollTop+b.height&&x>b.scrollLeft&&p<b.scrollLeft+b.width}}h=!h}return h?"data:,":e.call(this,f,g)});try{let f=window.getComputedStyle(a),g=b?`${V(f.marginTop)-b.scrollTop}px`:void 0,h=b?`${V(f.marginLeft)-b.scrollLeft}px`:void 0,l=`${Math.max(a.offsetWidth,d)}px`,p,x=`${Math.max(a.offsetHeight,c+((p=b==null?void 0:b.scrollTop)!=null?p:0))}px`;return yield Ea(a,Object.assign({},{width:d,height:c,j:d,i:c},b?{style:{width:l,height:x,marginTop:g,
+marginLeft:h,marginBlockStart:g,marginInlineStart:h}}:{},{A:!0,filter:n=>{if(n.tagName==="IMG"){let U=n.getAttribute("src");if(!U||U.trim()===""||n.style.display==="none")return!1}return!0},o:Y,h:()=>Y}))}catch(f){return X(d,c)}finally{HTMLCanvasElement.prototype.toDataURL=e}})}
+function Ga(){return u(function*(){var a=document.body.offsetWidth,b=document.body.offsetHeight,d=document.body.cloneNode(!0);d.querySelectorAll('[class*="animate"]').forEach(c=>{c.classList.remove(...Array.from(c.classList).filter(e=>e.startsWith("animate")))});d.style.width=`${a}px`;d.style.height=`${b}px`;return d})}
+function Ha(a){return u(function*(){var b={width:window.innerWidth||document.documentElement.clientWidth||document.body.offsetWidth,height:window.innerHeight||document.documentElement.clientHeight||document.body.offsetHeight,scrollTop:window.scrollY||document.documentElement.scrollTop||document.body.scrollTop||0,scrollLeft:window.scrollX||document.documentElement.scrollLeft||document.body.scrollLeft||0},d=document.body;if(W()){let c=yield Ga();d=c;document.body.appendChild(c)}b=yield Z(d,b);W()&&
+document.body.removeChild(d);window.parent.postMessage({type:"SEND_SCREENSHOT",image:b,topOffset:0},a.origin)})}function Ia(a){return u(function*(){var b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}window.addEventListener("message",a=>u(function*(){if(Fa.some(d=>a.origin.includes(d))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Ha(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ia(a)))}}));
+})();</script><script data-bard-client-injected="true">(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script data-bard-client-injected="true">
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}" data-bard-client-injected="true">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.i=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.h=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.extensions="";var l=0,t=null,r=null,q=[],F=new TextEncoder,
+G=new TextDecoder;c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*
+16|0;return(f==="x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;
+(g=t)==null||g.postMessage(a)}};Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script data-bard-client-injected="true">((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedImageTransformModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image","imageTransformModelName":"gemini-3-pro-image","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image","gemini-3.1-flash-image-preview"],"deprecatedImageTransformModelNames":["gemini-3-pro-image-preview-11-2025"]})</script><script data-bard-client-injected="true">(function() {
+  const OVERLAY_SELECTOR =
+    'dialog[open], [role="dialog"], [role="alertdialog"], [role="menu"], [role="listbox"], [role="combobox"]';
+
+  function isVisibleOverlay(element) {
+    if (element.closest('[hidden], [aria-hidden="true"], [inert]')) {
+      return false;
+    }
+    if (window.getComputedStyle(element).visibility === 'hidden') {
+      return false;
+    }
+    for (let cur = element; cur; cur = cur.parentElement) {
+      if (window.getComputedStyle(cur).display === 'none') {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  function hasOpenOverlay() {
+    const candidates = document.querySelectorAll(OVERLAY_SELECTOR);
+    for (let i = 0; i < candidates.length; i++) {
+      if (isVisibleOverlay(candidates[i])) {
+        return true;
+      }
+    }
+    try {
+      if (document.querySelector('[popover]:popover-open')) {
+        return true;
+      }
+    } catch (e) {
+      // Ignore engines that do not support :popover-open.
+    }
+    return false;
+  }
+
+  function isNonEmptySearchInput(target) {
+    return (
+      Boolean(target) &&
+      target.tagName === 'INPUT' &&
+      typeof target.type === 'string' &&
+      target.type.toLowerCase() === 'search' &&
+      typeof target.value === 'string' &&
+      target.value.length > 0
+    );
+  }
+
+  function shouldIgnoreEscape(event) {
+    return (
+      event.key !== 'Escape' ||
+      event.altKey ||
+      event.ctrlKey ||
+      event.metaKey ||
+      event.shiftKey ||
+      event.isComposing ||
+      event.repeat ||
+      event.keyCode === 229 ||
+      isNonEmptySearchInput(event.target)
+    );
+  }
+
+  let shouldIgnoreCaptureState = false;
+
+  window.addEventListener(
+    'keydown',
+    function(event) {
+      if (event.key === 'Escape') {
+        shouldIgnoreCaptureState =
+          hasOpenOverlay() || isNonEmptySearchInput(event.target);
+      }
+    },
+    {capture: true},
+  );
+
+  window.addEventListener('keydown', function(event) {
+    if (
+      shouldIgnoreEscape(event) ||
+      event.defaultPrevented ||
+      shouldIgnoreCaptureState
+    ) {
+      return;
+    }
+    const wasBlockedOnCapture = shouldIgnoreCaptureState;
+    queueMicrotask(function() {
+      if (event.defaultPrevented || wasBlockedOnCapture) {
+        return;
+      }
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage({'type': 'escapeKey'}, '*');
+      }
+    });
+  });
+})();</script><script data-bard-client-injected="true">(function() {
+  function normalizeSlug(str) {
+    try {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^p{L}p{N}s_-]/gu, '')
+        .replace(/s+/g, '-');
+    } catch (e) {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^a-z0-9s_-]/g, '')
+        .replace(/s+/g, '-');
+    }
+  }
+
+  function findTargetElement(hash) {
+    if (!hash || hash === '#') {
+      return null;
+    }
+    const rawId = hash.startsWith('#') ? hash.slice(1) : hash;
+    let decodedId = rawId;
+    try {
+      decodedId = decodeURIComponent(rawId);
+    } catch (e) {
+      // Ignore URI malformed errors.
+    }
+
+    // 1. Direct ID match (raw and decoded).
+    let target = document.getElementById(rawId) || document.getElementById(decodedId);
+    if (target) {
+      return target;
+    }
+
+    // 2. Name attribute match (<a name="...">).
+    try {
+      if (typeof CSS !== 'undefined' && CSS.escape) {
+        target =
+          document.querySelector('[name="' + CSS.escape(rawId) + '"]') ||
+          document.querySelector('[name="' + CSS.escape(decodedId) + '"]');
+      } else {
+        const namedElements = document.getElementsByName(rawId);
+        if (namedElements && namedElements.length > 0) {
+          return namedElements[0];
+        }
+      }
+    } catch (e) {
+      // Ignore querySelector syntax errors.
+    }
+    if (target) {
+      return target;
+    }
+
+    // 3. Match heading text by slug (for Markdown TOCs where headings lack explicit IDs).
+    const targetSlug = normalizeSlug(decodedId);
+    if (targetSlug) {
+      for (const heading of document.querySelectorAll('h1, h2, h3, h4, h5, h6')) {
+        if (normalizeSlug(heading.textContent || '') === targetSlug) {
+          return heading;
+        }
+      }
+    }
+
+    return null;
+  }
+
+  document.addEventListener('click', function(event) {
+    const target = event.target;
+    const anchor = target && typeof target.closest === 'function' ? target.closest('a') : null;
+    if (!anchor) {
+      return;
+    }
+
+    const href = anchor.getAttribute('href');
+    if (
+      !href ||
+      href.trim().toLowerCase().startsWith('javascript:') ||
+      anchor.hasAttribute('download')
+    ) {
+      return;
+    }
+
+    // Check if the link is an in-page hash / anchor link.
+    if (href.startsWith('#')) {
+      event.preventDefault();
+      const targetElement = findTargetElement(href);
+      if (targetElement) {
+        targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+      }
+      return;
+    }
+
+    // Check if the URL has the same origin/pathname but with a hash.
+    try {
+      const url = new URL(anchor.href, window.location.href);
+      if (
+        url.hash &&
+        url.origin === window.location.origin &&
+        url.pathname === window.location.pathname
+      ) {
+        event.preventDefault();
+        const targetElement = findTargetElement(url.hash);
+        if (targetElement) {
+          targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+        }
+        return;
+      }
+    } catch (e) {
+      // Fall through if URL parsing fails.
+    }
+
+    // For all external or full navigation links, prevent iframe-level navigation
+    // (which breaks in AGSA WebView or sandboxed iframes) and ensure they open
+    // safely in a new tab/window.
+    if (anchor.target !== '_blank') {
+      event.preventDefault();
+      window.open(anchor.href, '_blank', 'noopener,noreferrer');
+    }
+  }, {capture: true});
+})();</script><script data-bard-client-injected="true">(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script data-bard-client-injected="true">(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>อินทัช · ช่างภาพวิลล่า | พอร์ตโฟลิโอช่างภาพวิลล่า</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&amp;family=Noto+Serif+Thai:wght@300;400;500;600&amp;family=Prompt:wght@300;400;500&amp;display=swap" rel="stylesheet">
+<script>
+window.handleImgFallback = function(imgEl){
+  if (!imgEl) return;
+  var orig = imgEl.getAttribute('data-orig-src') || imgEl.getAttribute('src') || '';
+  var step = parseInt(imgEl.getAttribute('data-fb-step') || '0', 10);
+  var mFile = orig.match(/drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/);
+  var mOpen = orig.match(/[?&]id=([a-zA-Z0-9_-]+)/);
+  var mLh = orig.match(/(?:lh\d+|drive-thirdparty)\.googleusercontent\.com\/(?:d\/)?([a-zA-Z0-9_-]+)/);
+  var driveId = (mFile && mFile[1]) || ((orig.indexOf('drive.google.com') !== -1 || orig.indexOf('docs.google.com') !== -1) && mOpen && mOpen[1]) || (mLh && mLh[1]) || '';
+  if (driveId) {
+    if (step === 0) {
+      imgEl.setAttribute('data-fb-step', '1');
+      imgEl.removeAttribute('referrerpolicy');
+      imgEl.src = 'https://lh3.googleusercontent.com/d/' + driveId + '=w1600';
+      return;
+    }
+    if (step === 1) {
+      imgEl.setAttribute('data-fb-step', '2');
+      imgEl.setAttribute('referrerpolicy', 'no-referrer');
+      imgEl.src = 'https://drive.google.com/thumbnail?id=' + driveId + '&sz=w1600';
+      return;
+    }
+    if (step === 2) {
+      imgEl.setAttribute('data-fb-step', '3');
+      imgEl.removeAttribute('referrerpolicy');
+      imgEl.src = 'https://drive.google.com/uc?export=view&id=' + driveId;
+      return;
+    }
+  }
+  imgEl.style.display = 'none';
+  if (imgEl.nextElementSibling && imgEl.nextElementSibling.classList && imgEl.nextElementSibling.classList.contains('img-fallback-svg')) {
+    imgEl.nextElementSibling.style.display = 'block';
+  }
+};
+</script>
+<style>
+:root{
+  --bg:#0e1215;
+  --surface:#151a1e;
+  --panel:#1c2227;
+  --ink:#f1ede6;
+  --muted:#9da4ab;
+  --line:#293138;
+  --accent:#c8a472;
+  --accent-soft:rgba(200,164,114,.14);
+  --on-accent:#13100c;
+  --shadow:0 24px 60px rgba(0,0,0,.42);
+  color-scheme:dark;
+}
+:root[data-theme="light"]{
+  --bg:#f8f6f2;
+  --surface:#ffffff;
+  --panel:#efeae1;
+  --ink:#151a22;
+  --muted:#474e57;
+  --line:#d6cebf;
+  --accent:#7d5d2b;
+  --accent-soft:rgba(125,93,43,.13);
+  --on-accent:#ffffff;
+  --shadow:0 20px 50px rgba(21,26,34,.07);
+  color-scheme:light;
+}
+html{scroll-padding-top:76px;scroll-behavior:smooth;overflow-x:hidden}
+*,*::before,*::after{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font:300 16px/1.75 "Prompt","Noto Sans Thai",system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+h1,h2,h3,.serif{
+  font-family:"Cormorant Garamond","Noto Serif Thai",Georgia,serif;
+  font-weight:400;
+  line-height:1.22;
+  margin:0;
+}
+a{color:inherit}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{
+  outline:2px solid var(--accent);
+  outline-offset:3px;
+}
+
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(16px, 3vw, 28px)}
+
+/* Sticky Topbar */
+.topbar{
+  position:sticky;
+  top:0;
+  z-index:30;
+  background:color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 0;
+  gap:14px;
+  flex-wrap:wrap;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+}
+.brand-mark{
+  width:10px;
+  height:10px;
+  border-radius:2px;
+  transform:rotate(45deg);
+  background:var(--accent);
+  flex:none;
+}
+header b{
+  font-family:"Cormorant Garamond","Noto Serif Thai",serif;
+  font-size:clamp(17px, 1.9vw, 21px);
+  font-weight:500;
+  letter-spacing:.01em;
+  white-space:nowrap;
+}
+.hd-right{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+nav{display:flex;gap:8px;font-size:13.5px;letter-spacing:.02em;flex-wrap:wrap}
+nav a{
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  padding:6px 14px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background:var(--surface);
+  text-decoration:none;
+  color:var(--ink);
+  cursor:pointer;
+  white-space:nowrap;
+  transition:border-color .2s, background .2s, color .2s, transform .15s;
+}
+nav a::after{
+  content:"";
+  position:absolute;
+  left:14px;
+  right:14px;
+  bottom:3px;
+  height:1.5px;
+  border-radius:2px;
+  background:var(--accent);
+  transform:scaleX(0);
+  transition:transform .2s ease;
+}
+nav a:hover{
+  border-color:var(--accent);
+  background:var(--accent-soft);
+  transform:translateY(-1px);
+}
+nav a:hover::after{transform:scaleX(1)}
+nav a:active{transform:translateY(0)}
+
+.hd-tools{display:flex;align-items:center;gap:8px}
+.icon-pill{
+  height:34px;padding:0 12px;border-radius:999px;border:1px solid var(--line);
+  background:var(--surface);color:var(--ink);cursor:pointer;
+  display:inline-flex;align-items:center;justify-content:center;gap:6px;
+  font:400 12px/1 "Prompt",sans-serif;transition:border-color .2s, background .2s;
+}
+.icon-pill:hover{border-color:var(--accent)}
+.lang-switch{
+  display:inline-flex;border:1px solid var(--line);border-radius:999px;
+  padding:2px;background:var(--surface);flex:none;
+}
+.lang-switch button{
+  font:inherit;font-size:12px;font-weight:500;padding:4px 11px;
+  border:0;border-radius:999px;background:none;color:var(--muted);cursor:pointer;
+}
+.lang-switch button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+
+/* Buttons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:11px 22px;border-radius:999px;border:1px solid var(--accent);
+  background:var(--accent);color:var(--on-accent);text-decoration:none;
+  font:500 14px/1.2 "Prompt",sans-serif;cursor:pointer;
+  transition:transform .2s, filter .2s, background .2s;
+}
+.btn:hover{transform:translateY(-1px);filter:brightness(1.06)}
+.btn.outline{
+  background:var(--surface);color:var(--ink);border-color:var(--line);font-weight:400;
+}
+.btn.outline:hover{border-color:var(--accent);background:var(--accent-soft)}
+
+/* Hero Section */
+.hero{padding:44px 0 64px}
+.hero-head{
+  display:grid;
+  grid-template-columns:1.25fr .85fr;
+  gap:32px;
+  align-items:end;
+  margin-bottom:28px;
+}
+.eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  font-size:12px;
+  font-weight:500;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:10px;
+}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--accent)}
+.hero h1{font-size:clamp(30px,4.5vw,56px);letter-spacing:-.01em}
+.hero-aside p{margin:0 0 18px;color:var(--muted);font-size:15.5px}
+.hero-cta-row{display:flex;gap:12px;flex-wrap:wrap}
+
+/* Auto-Sliding Villa Sample Stage */
+.stage-card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:30px;
+  padding:14px;
+  box-shadow:var(--shadow);
+}
+.stage{
+  position:relative;
+  border-radius:22px;
+  overflow:hidden;
+  aspect-ratio:16/9;
+  width:100%;
+  max-height:600px;
+  margin:0 auto;
+  background:var(--panel);
+}
+.auto-slider-wrap{
+  position:relative;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+.auto-slide{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  opacity:0;
+  visibility:hidden;
+  transform:scale(1.035);
+  transition:opacity 0.95s cubic-bezier(0.22, 1, 0.36, 1), transform 1.2s cubic-bezier(0.22, 1, 0.36, 1), visibility 0.95s ease;
+  will-change:opacity, transform;
+  pointer-events:none;
+}
+.auto-slide.is-active{
+  opacity:1;
+  visibility:visible;
+  transform:scale(1);
+  z-index:2;
+  pointer-events:auto;
+}
+.auto-slide.is-exiting{
+  opacity:0;
+  visibility:visible;
+  transform:scale(1.015);
+  z-index:1;
+  transition:opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1), transform 0.85s cubic-bezier(0.22, 1, 0.36, 1), visibility 0.85s ease;
+}
+.auto-slide > svg,
+.auto-slide > img,
+.auto-slide > video,
+.auto-slide > iframe,
+.auto-slide .img-fallback-svg{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border:0;
+}
+.auto-slide .img-fallback-svg svg{
+  width:100%;
+  height:100%;
+  display:block;
+}
+.auto-slider-controls{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  padding:12px 6px 2px;
+  flex-wrap:wrap;
+}
+.auto-dots{display:flex;gap:5px;align-items:center}
+.auto-dot{
+  width:6px;height:6px;border-radius:999px;border:0;padding:0;
+  background:var(--line);cursor:pointer;transition:width .25s,background .25s;
+}
+.auto-dot.active{width:16px;background:var(--accent)}
+
+/* 4-Point Strip */
+.highlights{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px;
+  margin-top:20px;
+}
+.hl-item{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:16px 18px;
+}
+.hl-item strong{display:block;font-size:14px;font-weight:500;color:var(--ink)}
+.hl-item span{display:block;font-size:13px;color:var(--muted);margin-top:2px}
+
+/* Sections */
+section{padding:72px 0;border-top:1px solid var(--line)}
+.sec-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:24px;
+  flex-wrap:wrap;
+  margin-bottom:32px;
+}
+section h2{font-size:clamp(28px,4vw,44px)}
+.lead{color:var(--muted);max-width:38em;margin:8px 0 0;font-size:15.5px}
+
+/* Filter Tabs */
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.filters button{
+  font:inherit;font-size:14px;padding:8px 20px;border-radius:999px;
+  border:1px solid var(--line);background:var(--surface);color:var(--ink);
+  cursor:pointer;transition:all .2s;
+}
+.filters button:hover{border-color:var(--accent)}
+.filters button[aria-pressed="true"]{
+  background:var(--ink);color:var(--bg);border-color:var(--ink);font-weight:400;
+}
+
+/* Villa Sets Grid */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px 22px}
+.tile-wrap{display:flex;flex-direction:column}
+.tile{
+  background:var(--surface);border:1px solid var(--line);border-radius:26px;
+  padding:12px;text-align:left;color:inherit;font:inherit;cursor:pointer;
+  display:flex;flex-direction:column;width:100%;transition:transform .25s, border-color .25s, box-shadow .25s;
+}
+.tile:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:var(--shadow)}
+.tile .img{
+  position:relative;border-radius:18px;overflow:hidden;
+  aspect-ratio:4/3;background:var(--panel);width:100%;
+}
+.tile .img svg,.tile .img img,.tile .img video,.tile .img .img-fallback-svg{
+  display:block;width:100%;height:100%;object-fit:cover;
+  transition:transform .5s cubic-bezier(.22,1,.36,1);
+  -webkit-user-drag:none;user-drag:none;-webkit-touch-callout:none;
+}
+.tile:hover .img svg,.tile:hover .img img{transform:scale(1.04)}
+.set-count-badge{
+  position:absolute;right:10px;bottom:10px;
+  background:rgba(15,18,21,.8);color:#fff;font-size:12px;font-weight:500;
+  padding:4px 11px;border-radius:999px;backdrop-filter:blur(6px);
+}
+.listing-ribbon{
+  position:absolute;left:10px;bottom:10px;z-index:2;
+  display:inline-flex;align-items:center;gap:5px;
+  padding:5px 12px;border-radius:999px;
+  font-size:11.5px;font-weight:600;letter-spacing:.03em;
+  color:#13100c;background:var(--accent);
+  box-shadow:0 6px 18px rgba(0,0,0,.38);
+  border:1px solid rgba(255,255,255,.22);
+}
+.listing-ribbon.is-sale{
+  background:linear-gradient(135deg, #e0b779 0%, #c4934c 100%);
+  color:#15110b;
+}
+.listing-ribbon.is-rent{
+  background:linear-gradient(135deg, #52b7a8 0%, #2d8a7c 100%);
+  color:#f4fbfa;
+}
+.listing-ribbon.is-both{
+  background:linear-gradient(135deg, #d99b52 0%, #4895b0 100%);
+  color:#ffffff;
+}
+.listing-icon-badge{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:18px;
+  height:18px;
+  border-radius:999px;
+  font-family:"Cormorant Garamond","Prompt",sans-serif;
+  font-size:12px;
+  font-weight:700;
+  line-height:1;
+  background:rgba(0,0,0,.22);
+  border:1px solid currentColor;
+  flex:none;
+}
+.tile-body{padding:12px 6px 4px;width:100%}
+.tile-top-meta{font-size:12px;color:var(--accent);font-weight:500;letter-spacing:.02em}
+.tile strong{display:block;font-weight:500;font-size:17px;margin-top:2px;line-height:1.35}
+.tile-bottom{
+  display:flex;justify-content:space-between;align-items:center;
+  gap:10px;margin-top:8px;padding-top:8px;border-top:1px solid var(--line);
+}
+.tile span.meta{font-size:13px;color:var(--muted)}
+.tile-cta{font-size:13px;font-weight:500;color:var(--accent);white-space:nowrap}
+
+/* Services Cards */
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.svc-card{
+  background:var(--surface);border:1px solid var(--line);border-radius:26px;
+  padding:28px 26px;display:flex;flex-direction:column;justify-content:space-between;
+}
+.svc-num{
+  display:inline-block;font-family:"Cormorant Garamond",serif;
+  font-size:18px;font-weight:600;color:var(--accent);margin-bottom:10px;
+}
+.svc h3{font-size:23px;margin-bottom:8px}
+.svc p{margin:0;color:var(--muted);font-size:15px}
+.svc-pick{margin-top:20px;align-self:flex-start}
+
+/* Contact & Interactive Business Card Box */
+.contact{
+  background:var(--surface);border:1px solid var(--line);border-radius:34px;
+  padding:clamp(22px, 4vw, 44px);margin:12px 0 64px;box-shadow:var(--shadow);
+  display:grid;grid-template-columns:minmax(0, 1.15fr) minmax(0, .95fr);gap:clamp(22px, 3.5vw, 38px);align-items:start;
+}
+.contact > *{min-width:0}
+.price-note-box{
+  margin-top:18px;
+  padding:13px 16px;
+  border-radius:18px;
+  background:var(--panel);
+  border:1px solid var(--line);
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.55;
+}
+.price-note-box strong{color:var(--accent);font-weight:500}
+.booking-steps{
+  display:grid;
+  gap:10px;
+  margin-top:18px;
+}
+.b-step{
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+  padding:11px 14px;
+  border-radius:16px;
+  background:var(--panel);
+  border:1px solid var(--line);
+}
+.b-step-num{
+  font-family:"Cormorant Garamond",serif;
+  font-size:15px;
+  font-weight:600;
+  color:var(--accent);
+  line-height:1.4;
+  flex:none;
+}
+.b-step-txt strong{
+  display:block;
+  font-size:13.5px;
+  font-weight:500;
+  color:var(--ink);
+  line-height:1.35;
+}
+.b-step-txt span{
+  display:block;
+  font-size:12.5px;
+  color:var(--muted);
+  line-height:1.45;
+  margin-top:2px;
+}
+.service-area-row{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:8px;
+  margin-top:14px;
+  font-size:12.5px;
+  color:var(--muted);
+}
+.area-pill{
+  padding:4px 11px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background:var(--panel);
+  color:var(--ink);
+  font-size:12px;
+}
+.quick-copy-btn{
+  margin-top:14px;
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  padding:9px 15px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background:var(--panel);
+  color:var(--ink);
+  font:400 12.5px/1.2 "Prompt",sans-serif;
+  cursor:pointer;
+  transition:border-color .2s, background .2s;
+}
+.quick-copy-btn:hover{border-color:var(--accent);background:var(--accent-soft)}
+.contact-card-box{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:16px;
+}
+.contact-card-stage{
+  position:relative;
+  width:100%;
+  aspect-ratio:1.68/1;
+  border-radius:16px;
+  overflow:visible;
+  background:transparent;
+  perspective:1400px;
+  touch-action:pan-y;
+  cursor:grab;
+  user-select:none;
+}
+.contact-card-stage:active{cursor:grabbing}
+.card-flip-scene{
+  width:100%;
+  height:100%;
+  position:relative;
+  transform-style:preserve-3d;
+}
+.card-3d{
+  position:relative;
+  width:100%;
+  height:100%;
+  transform-style:preserve-3d;
+  will-change:transform;
+  transition:transform .68s cubic-bezier(.22,1,.36,1);
+}
+.card-3d.dragging{
+  transition:none;
+}
+.card-face{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border-radius:16px;
+  overflow:hidden;
+  border:1px solid var(--line);
+  background:var(--surface);
+  box-shadow:0 14px 34px rgba(0,0,0,.35);
+  backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;
+}
+.card-face.front{
+  transform:rotateY(0deg);
+}
+.card-face.back{
+  transform:rotateY(-180deg);
+}
+
+/* Fullscreen / Centered Lightbox for 3D Business Card */
+.card-lightbox{
+  position:fixed;
+  inset:0;
+  z-index:9998;
+  background:rgba(7,9,12,.9);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  display:none;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:clamp(16px, 4vw, 36px);
+  gap:18px;
+}
+.card-lightbox.open{display:flex}
+.card-lightbox-top{
+  width:100%;
+  max-width:740px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  color:var(--ink);
+}
+.card-lightbox-title{
+  font-family:"Cormorant Garamond","Noto Serif Thai",serif;
+  font-size:clamp(20px, 2.8vw, 28px);
+  margin:0;
+}
+.card-lightbox-stage{
+  width:100%;
+  max-width:740px;
+  aspect-ratio:1.68/1;
+  perspective:1800px;
+  touch-action:none;
+  cursor:grab;
+  user-select:none;
+}
+.card-lightbox-stage:active{cursor:grabbing}
+.card-lightbox-stage .card-face{
+  border-radius:24px;
+  box-shadow:0 28px 70px rgba(0,0,0,.6);
+}
+.card-lightbox-stage .card-default-art{
+  padding:clamp(22px, 4vw, 38px);
+}
+.card-lightbox-stage .card-art-title{
+  font-size:clamp(24px, 4vw, 38px);
+}
+.card-lightbox-stage .card-art-sub{
+  font-size:clamp(13px, 1.8vw, 16px);
+}
+.card-lightbox-stage .card-art-foot{
+  font-size:clamp(12px, 1.5vw, 14px);
+}
+.card-lightbox-ctrl{
+  width:100%;
+  max-width:740px;
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:14px 18px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.card-lightbox-row{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.card-lightbox-row input[type="range"]{
+  flex:1;
+  accent-color:var(--accent);
+  height:24px;
+  cursor:pointer;
+  margin:0;
+}
+.card-lightbox-btns{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.card-hint-txt{
+  font-size:12.5px;
+  color:var(--muted);
+}
+.card-face img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  pointer-events:none;
+}
+.card-default-art{
+  width:100%;
+  height:100%;
+  padding:18px 20px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  background:linear-gradient(135deg, #161c22 0%, #101418 58%, #221c14 100%);
+  color:#f1ede6;
+  direction:ltr;
+  text-align:left;
+}
+.card-default-art.back-art{
+  background:linear-gradient(135deg, #1b1712 0%, #12161a 55%, #192229 100%);
+}
+.card-badge-pill{
+  align-self:flex-start;
+  font-size:10px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--accent);
+  border:1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+  padding:3px 9px;
+  border-radius:999px;
+}
+.card-art-title{
+  font-family:"Cormorant Garamond","Noto Serif Thai",serif;
+  font-size:clamp(18px, 2.2vw, 24px);
+  line-height:1.2;
+  margin:4px 0 2px;
+}
+.card-art-sub{font-size:11.5px;color:#b6bec6}
+.card-art-foot{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:8px;
+  font-size:11px;
+  color:#d7c3a3;
+  border-top:1px solid rgba(255,255,255,.1);
+  padding-top:8px;
+}
+
+.contact-card-ctrl{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-top:10px;
+}
+.contact-card-ctrl input{
+  flex:1;
+  accent-color:var(--accent);
+  height:22px;
+  cursor:pointer;
+  margin:0;
+}
+.contact-card-ctrl output{
+  font-size:12px;
+  font-weight:500;
+  color:var(--accent);
+  white-space:nowrap;
+}
+:root[data-theme="light"] .contact .lead,
+:root[data-theme="light"] .b-step-txt span,
+:root[data-theme="light"] .service-area-row,
+:root[data-theme="light"] .price-note-box,
+:root[data-theme="light"] .card-hint-txt{
+  color:#3c434c;
+}
+:root[data-theme="light"] .b-step,
+:root[data-theme="light"] .area-pill,
+:root[data-theme="light"] .price-note-box,
+:root[data-theme="light"] .quick-copy-btn{
+  background:#f4f0e8;
+  border-color:#d2c8b6;
+}
+:root[data-theme="light"] .contact-pill-btn:not(.primary){
+  background:#f6f3ec;
+  border-color:#cfc5b2;
+  color:#151a22;
+}
+:root[data-theme="light"] .card-default-art{
+  background:linear-gradient(135deg, #fbf9f5 0%, #f1ece2 58%, #e8decb 100%);
+  color:#151a22;
+  border:1px solid #d5cbb8;
+}
+:root[data-theme="light"] .card-default-art.back-art{
+  background:linear-gradient(135deg, #f3eee4 0%, #f9f7f2 55%, #e6dfd1 100%);
+  color:#151a22;
+  border:1px solid #d5cbb8;
+}
+:root[data-theme="light"] .card-default-art .card-art-sub{
+  color:#434a53;
+}
+:root[data-theme="light"] .card-default-art .card-art-foot{
+  color:#6c4f22;
+  border-top-color:rgba(21,26,34,.12);
+}
+.contact-card-actions{
+  display:flex;
+  gap:6px;
+  flex-wrap:wrap;
+  margin-top:8px;
+}
+.dock-btn{
+  font:400 11.5px/1.1 "Prompt",sans-serif;
+  padding:6px 11px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background:var(--surface);
+  color:var(--ink);
+  cursor:pointer;
+}
+.dock-btn.owner-only{display:none}
+body.editing .dock-btn.owner-only{display:inline-flex;align-items:center}
+.dock-btn.danger{border-color:#c94a4a;color:#c94a4a}
+
+.contact-below-btns{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:8px;
+  margin-top:12px;
+  padding-top:12px;
+  border-top:1px solid var(--line);
+}
+.contact-pill-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  padding:10px 12px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background:var(--surface);
+  color:var(--ink);
+  text-decoration:none;
+  font-size:clamp(12px, 1.1vw, 13.5px);
+  font-weight:400;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  min-width:0;
+  transition:border-color .2s, background .2s, transform .2s;
+}
+.contact-pill-btn:hover{border-color:var(--accent);transform:translateY(-1px)}
+.contact-pill-btn.primary{
+  background:var(--accent);
+  color:var(--on-accent);
+  border-color:var(--accent);
+  font-weight:500;
+}
+.contact-pill-btn.primary:hover{filter:brightness(1.06)}
+
+/* Footer */
+footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  flex-wrap:wrap;
+  padding:24px 0 36px;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  font-size:13.5px;
+}
+
+/* Set Slideshow Lightbox Dialog */
+dialog{
+  border:1px solid var(--line);
+  border-radius:26px;
+  background:var(--surface);
+  color:var(--ink);
+  padding:20px;
+  max-width:960px;
+  width:calc(100vw - 28px);
+  box-shadow:var(--shadow);
+}
+dialog::backdrop{background:rgba(8,10,13,.78);backdrop-filter:blur(6px)}
+.viewer-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-bottom:12px;
+}
+.viewer-set-title{font-family:"Cormorant Garamond","Noto Serif Thai",serif;font-size:24px}
+.viewer-set-sub{font-size:13px;color:var(--accent);margin-left:8px}
+.viewer-stage-wrap{
+  position:relative;
+  border-radius:18px;
+  overflow:hidden;
+  aspect-ratio:16/10;
+  background:#090c0e;
+  cursor:zoom-in;
+}
+.viewer-stage{width:100%;height:100%;cursor:zoom-in}
+.viewer-stage svg,.viewer-stage img,.viewer-stage video,.viewer-stage iframe,.viewer-stage .img-fallback-svg{
+  display:block;width:100%;height:100%;object-fit:contain;border:0;
+  -webkit-user-drag:none;user-drag:none;-webkit-touch-callout:none;
+}
+.media-shield{
+  position:absolute;inset:0;z-index:2;
+  background:transparent;
+}
+body.editing .media-shield{pointer-events:none}
+.zoom-overlay{
+  position:fixed;inset:0;z-index:9999;
+  background:rgba(5,7,10,.96);
+  display:none;flex-direction:column;
+  touch-action:none;user-select:none;
+}
+.zoom-overlay.open{display:flex}
+.zoom-bar{
+  position:relative;z-index:3;
+  display:flex;justify-content:space-between;align-items:center;gap:10px;
+  padding:calc(12px + env(safe-area-inset-top,0px)) 16px 12px;
+  background:linear-gradient(to bottom, rgba(0,0,0,.72), transparent);
+  color:#fff;font-size:13px;
+}
+.zoom-tools{display:flex;align-items:center;gap:8px}
+.zoom-pill{
+  padding:7px 13px;border-radius:999px;
+  border:1px solid rgba(255,255,255,.25);
+  background:rgba(24,28,34,.85);color:#fff;
+  font:400 13px/1 "Prompt",sans-serif;cursor:pointer;
+}
+.zoom-canvas{
+  flex:1;position:relative;overflow:hidden;
+  display:flex;align-items:center;justify-content:center;
+}
+.zoom-target{
+  width:100%;height:100%;
+  display:flex;align-items:center;justify-content:center;
+  transform-origin:center center;
+  will-change:transform;
+}
+.zoom-target img,.zoom-target svg{
+  max-width:100vw;max-height:100%;width:100%;height:100%;
+  object-fit:contain;pointer-events:none;display:block;
+}
+.zoom-hint{
+  position:absolute;bottom:calc(16px + env(safe-area-inset-bottom,0px));left:50%;
+  transform:translateX(-50%);padding:6px 14px;border-radius:999px;
+  background:rgba(20,24,30,.8);color:rgba(255,255,255,.85);
+  font-size:12px;white-space:nowrap;pointer-events:none;
+}
+.slide-nav{
+  position:absolute;top:50%;transform:translateY(-50%);
+  width:42px;height:42px;border-radius:999px;
+  border:1px solid rgba(255,255,255,.22);
+  background:rgba(12,15,19,.72);color:#fff;
+  font-size:24px;line-height:1;cursor:pointer;
+  display:inline-flex;align-items:center;justify-content:center;
+}
+.slide-nav.prev{left:12px}
+.slide-nav.next{right:12px}
+.slide-counter{
+  position:absolute;right:12px;bottom:12px;
+  padding:4px 11px;border-radius:999px;
+  background:rgba(12,15,19,.78);color:#fff;font-size:12px;
+}
+.cap{
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+  margin-top:12px;flex-wrap:wrap;
+}
+.cap button{
+  padding:8px 18px;border-radius:999px;border:1px solid var(--line);
+  background:var(--panel);color:var(--ink);font:inherit;font-size:13.5px;cursor:pointer;
+}
+.cap-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.owner-dl-btn{
+  display:none;
+  padding:8px 16px;border-radius:999px;border:1px solid var(--accent);
+  background:var(--accent-soft);color:var(--accent);
+  font:500 13.5px/1.2 "Prompt",sans-serif;cursor:pointer;
+}
+body.editing .owner-dl-btn{display:inline-flex;align-items:center;gap:6px}
+.viewer-edit-panel{
+  display:none;
+  margin-top:12px;
+  padding:12px 14px;
+  border-radius:16px;
+  background:var(--panel);
+  border:1px solid var(--accent);
+}
+body.editing .viewer-edit-panel{display:block}
+.viewer-edit-grid{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:10px;
+}
+.viewer-edit-field{display:flex;flex-direction:column;gap:4px}
+.viewer-edit-field label{font-size:11.5px;color:var(--muted)}
+.viewer-edit-field input{
+  padding:7px 10px;border-radius:10px;border:1px solid var(--line);
+  background:var(--surface);color:var(--ink);font:inherit;font-size:13px;
+}
+@media (max-width:640px){
+  .viewer-edit-grid{grid-template-columns:1fr}
+}
+.thumb-strip{
+  display:flex;gap:8px;overflow-x:auto;padding-top:12px;margin-top:12px;
+  border-top:1px solid var(--line);
+}
+.thumb-btn{
+  flex:0 0 84px;height:58px;padding:0;border-radius:10px;overflow:hidden;
+  border:2px solid transparent;background:var(--panel);cursor:pointer;
+}
+.thumb-btn.active{border-color:var(--accent)}
+.thumb-btn img,.thumb-btn svg,.thumb-btn video{width:100%;height:100%;object-fit:cover;display:block}
+
+/* Owner Admin Bar, Floating Button & Modals */
+.admin-bar{
+  display:none;
+  background:var(--panel);
+  border:1px solid var(--accent);
+  border-radius:20px;
+  padding:12px 16px;
+  margin-bottom:22px;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  flex-wrap:wrap;
+}
+body.editing .admin-bar{display:flex}
+.admin-actions{display:flex;gap:8px;flex-wrap:wrap}
+.adm-btn{
+  padding:7px 14px;border-radius:999px;border:1px solid var(--line);
+  background:var(--surface);color:var(--ink);font:inherit;font-size:13px;cursor:pointer;
+}
+.adm-btn.primary{background:var(--accent);color:var(--on-accent);border-color:var(--accent);font-weight:500}
+.tile-admin-tools{display:none;gap:6px;margin-top:8px;flex-wrap:wrap}
+body.editing .tile-admin-tools{display:flex}
+.tile-admin-tools button{
+  padding:5px 10px;border-radius:999px;border:1px solid var(--line);
+  background:var(--surface);color:var(--ink);font:inherit;font-size:12px;cursor:pointer;
+}
+.tile-admin-tools button.del{border-color:#c94a4a;color:#c94a4a}
+
+.modal-box h3{font-size:26px;margin-bottom:14px}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
+.field label{font-size:13px;color:var(--muted)}
+.field input,.field select,.field textarea{
+  padding:10px 13px;border-radius:14px;border:1px solid var(--line);
+  background:var(--panel);color:var(--ink);font:inherit;font-size:14px;
+}
+.field textarea{min-height:74px;resize:vertical}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.set-items-panel{
+  border:1px solid var(--line);border-radius:18px;padding:12px;
+  background:var(--panel);margin:10px 0 14px;
+}
+.set-items-panel .hint{font-size:12px;color:var(--muted);margin-top:4px}
+.set-item-list{display:flex;flex-direction:column;gap:8px;margin-top:10px;max-height:240px;overflow-y:auto}
+.set-item-row{
+  display:flex;align-items:center;gap:10px;padding:7px 9px;
+  border-radius:12px;background:var(--surface);border:1px solid var(--line);
+}
+.set-item-thumb{width:54px;height:38px;border-radius:8px;overflow:hidden;flex:none;background:var(--panel)}
+.set-item-thumb img,.set-item-thumb svg,.set-item-thumb video{width:100%;height:100%;object-fit:cover;display:block}
+.set-item-info{flex:1;min-width:0}
+.set-item-info input{
+  width:100%;padding:5px 8px;border-radius:8px;border:1px solid var(--line);
+  background:var(--panel);color:var(--ink);font:inherit;font-size:12.5px;
+}
+.modal-foot{display:flex;justify-content:flex-end;gap:10px;margin-top:16px}
+
+.admin-fab{
+  position:fixed;right:18px;bottom:18px;z-index:40;
+  display:inline-flex;align-items:center;gap:6px;
+  padding:9px 14px;border-radius:999px;
+  border:1px solid var(--line);background:var(--surface);color:var(--ink);
+  font:inherit;font-size:12.5px;cursor:pointer;box-shadow:var(--shadow);
+}
+.admin-fab:hover{border-color:var(--accent)}
+
+.toast{
+  position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);
+  background:var(--ink);color:var(--bg);padding:9px 18px;border-radius:999px;
+  font-size:13px;opacity:0;pointer-events:none;transition:opacity .25s, transform .25s;z-index:60;
+}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* Responsive Breakpoints (PC, Tablet, Mobile) */
+@media (max-width:960px){
+  .hero-head{grid-template-columns:1fr;gap:18px}
+  .highlights{grid-template-columns:repeat(2,1fr)}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .svc{grid-template-columns:1fr}
+  .contact{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .highlights{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr}
+  .field-row{grid-template-columns:1fr}
+  .contact{padding:18px;border-radius:24px;margin-bottom:76px}
+  .contact-below-btns{grid-template-columns:1fr}
+  .admin-fab{right:14px;bottom:14px;padding:9px 13px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+ <div class="wrap">
+  <header>
+   <a class="brand" href="#top">
+    <span class="brand-mark" aria-hidden="true"></span>
+    <b id="brandName">อินทัช · ช่างภาพวิลล่า</b>
+   </a>
+   <div class="hd-right">
+    <nav aria-label="เมนูหลัก">
+     <a href="#work" id="navWork">เซ็ตวิลล่า</a>
+     <a href="#service" id="navService">บริการ</a>
+     <a href="#contact" id="navContact">ติดต่อ</a>
+    </nav>
+    <div class="hd-tools">
+     <div class="lang-switch" role="group" aria-label="เปลี่ยนภาษา">
+      <button type="button" data-lang="th" aria-pressed="true">TH</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+     </div>
+     <button type="button" class="icon-pill" id="themeToggle" title="สลับโหมดสว่าง/มืด" aria-label="สลับโหมดสว่างหรือมืด">◐</button>
+    </div>
+   </div>
+  </header>
+ </div>
+</div>
+
+<div class="wrap" id="top">
+<main>
+ <!-- Hero Section -->
+ <div class="hero">
+  <div class="hero-head">
+   <div>
+    <div class="eyebrow">VILLA SET PORTFOLIO</div>
+    <h1 id="heroTitle">ตัวอย่างผลงาน รับจ้างถ่ายภาพวิดีโอและภาพมุมสูง</h1>
+   </div>
+   <div class="hero-aside">
+    <p id="heroSub">ผมแยกผลงานเป็นเซ็ตตามวิลล่าแต่ละหลัง เพื่อให้ดูภาพรวมและเลื่อนดูทีละมุมในหลังเดียวกันได้สะดวกโดยไม่ปะปนกัน</p>
+    <div class="hero-cta-row">
+     <a class="btn" href="#work" id="heroCtaWork">ดูเซ็ตวิลล่าทั้งหมด</a>
+     <a class="btn outline" href="#contact" id="heroCtaContact">ขอใบเสนอราคา</a>
+    </div>
+   </div>
+  </div>
+
+  <div class="stage-card">
+   <div class="stage" id="stage" aria-label="ตัวอย่างผลงานภาพถ่ายวิลล่า"></div>
+   <div class="auto-slider-controls">
+    <div class="auto-dots" id="autoDots" role="tablist" aria-label="เลือกสไลด์ตัวอย่าง"></div>
+    <div style="display:flex;gap:6px;align-items:center">
+     <button type="button" class="icon-pill" id="btnPrevAuto" aria-label="ภาพก่อนหน้า">‹</button>
+     <button type="button" class="icon-pill" id="btnToggleAuto">⏸ หยุดชั่วคราว</button>
+     <button type="button" class="icon-pill" id="btnNextAuto" aria-label="ภาพถัดไป">›</button>
+    </div>
+   </div>
+  </div>
+
+  <div class="highlights">
+   <div class="hl-item"><strong>แยกเซ็ตตามรายหลัง</strong><span>1 การ์ด = 1 วิลล่า กดเข้าไปดูทุกมุมในหลังเดียวกัน</span></div>
+   <div class="hl-item"><strong>ครบทั้งภาพนิ่งและวิดีโอ</strong><span>เก็บครบตั้งแต่มุมกว้างภายนอก สระว่ายน้ำ จนถึงห้องภายใน</span></div>
+   <div class="hl-item"><strong>แสงธรรมชาติและพลบค่ำ</strong><span>วางแผนเวลาถ่ายให้เห็นมิติสถาปัตยกรรมและแสงไฟสวยที่สุด</span></div>
+   <div class="hl-item"><strong>ไฟล์พร้อมใช้งานทันที</strong><span>ส่งมอบไฟล์ความละเอียดสูงสำหรับลงเว็บ OTA และโซเชียล</span></div>
+  </div>
+ </div>
+
+ <!-- Villa Sets Portfolio Section -->
+ <section id="work">
+  <div class="admin-bar" id="adminBar">
+   <span style="font-size:13.5px;color:var(--accent);font-weight:500">🔓 โหมดจัดการหลังบ้าน (PIN: 2538)</span>
+   <div class="admin-actions">
+    <button type="button" class="adm-btn primary" id="btnNewSet">+ เพิ่มเซ็ตวิลล่าใหม่</button>
+    <button type="button" class="adm-btn" id="btnEditSite">✎ แก้ไขชื่อและข้อมูลติดต่อ</button>
+    <button type="button" class="adm-btn primary" id="btnSaveAndDownloadIndex">✓ บันทึกและดาวน์โหลด index.html</button>
+    <button type="button" class="adm-btn" id="btnExportCode">💾 เซฟโค้ด HTML</button>
+   </div>
+  </div>
+
+  <div class="sec-head">
+   <div>
+    <div class="eyebrow">CURATED VILLA SETS</div>
+    <h2 id="workTitle">ผลงานแยกเป็นเซ็ตวิลล่า</h2>
+    <p class="lead" id="workLead">กดที่การ์ดวิลล่าหลังใดก็ได้ เพื่อเปิดเลื่อนดูภาพและวิดีโอทั้งหมดในเซ็ตนั้น</p>
+   </div>
+   <div class="filters" id="filters" role="group" aria-label="กรองตามช่วงแสงและประเภท"></div>
+  </div>
+
+  <div class="grid" id="grid"></div>
+ </section>
+
+ <!-- Packages Section -->
+ <section id="service">
+  <div class="sec-head">
+   <div>
+    <div class="eyebrow">PACKAGES</div>
+    <h2 id="svcTitle">แพ็กเกจบริการ</h2>
+    <p class="lead" id="svcLead">เลือกแพ็กเกจภาพและวิดีโอตามลักษณะวิลล่าและการใช้งานจริง</p>
+   </div>
+  </div>
+  <div class="svc">
+   <div class="svc-card">
+    <div>
+     <span class="svc-num">01</span>
+     <h3 id="svc1T">แพ็กเกจภาพถ่ายวิลล่า</h3>
+     <p id="svc1D">เก็บภาพนิ่งครบทั้งภายนอก สระว่ายน้ำ สวน และห้องภายใน ทั้งแสงกลางวันและแสงพลบค่ำ</p>
+    </div>
+    <button type="button" class="btn outline svc-pick" data-pkg="แพ็กเกจภาพถ่ายวิลล่า">สนใจแพ็กเกจนี้</button>
+   </div>
+   <div class="svc-card">
+    <div>
+     <span class="svc-num">02</span>
+     <h3 id="svc2T">แพ็กเกจวิดีโอเดินชม</h3>
+     <p id="svc2D">ถ่ายวิดีโอเล่าเรื่องและเดินชมพื้นที่วิลล่าอย่างลื่นไหล เหมาะสำหรับโพสต์โซเชียลและปล่อยเช่า</p>
+    </div>
+    <button type="button" class="btn outline svc-pick" data-pkg="แพ็กเกจวิดีโอเดินชม">สนใจแพ็กเกจนี้</button>
+   </div>
+   <div class="svc-card">
+    <div>
+     <span class="svc-num">03</span>
+     <h3 id="svc3T">แพ็กเกจภาพและวิดีโอครบเซ็ต</h3>
+     <p id="svc3D">รวมภาพถ่ายและวิดีโอวิลล่าเป็นเซ็ตเดียว พร้อมมุมสูงสำหรับเจ้าของโครงการ นายหน้า และรีสอร์ท</p>
+    </div>
+    <button type="button" class="btn outline svc-pick" data-pkg="แพ็กเกจภาพและวิดีโอครบเซ็ต">สนใจแพ็กเกจนี้</button>
+   </div>
+  </div>
+ </section>
+
+ <!-- Contact & Business Card Section -->
+ <div class="contact" id="contact">
+  <div>
+   <div class="eyebrow">BOOKING &amp; INQUIRY</div>
+   <h2 id="ctTitle">มีวิลล่าที่อยากให้ถ่ายเป็นเซ็ต?</h2>
+   <p class="lead" id="ctLead" style="margin:0">แจ้งทำเล จำนวนวิลล่า วันที่สะดวก และแพ็กเกจที่สนใจ แล้วผมจะตอบกลับพร้อมใบเสนอราคาโดยเร็ว</p>
+   <div class="booking-steps" id="bookingSteps">
+    <div class="b-step">
+     <span class="b-step-num">01</span>
+     <div class="b-step-txt">
+      <strong>ส่งข้อมูลวิลล่าเบื้องต้น</strong>
+      <span>ทำเล จำนวนห้องนอน และเลือกแพ็กเกจภาพหรือวิดีโอ</span>
+     </div>
+    </div>
+    <div class="b-step">
+     <span class="b-step-num">02</span>
+     <div class="b-step-txt">
+      <strong>เสนอราคา &amp; นัดช่วงแสงสวยที่สุด</strong>
+      <span>วางแผนเวลาถ่ายกลางวัน-พลบค่ำให้เหมาะกับทิศทางแดดของบ้าน</span>
+     </div>
+    </div>
+    <div class="b-step">
+     <span class="b-step-num">03</span>
+     <div class="b-step-txt">
+      <strong>ส่งมอบไฟล์ความละเอียดสูง</strong>
+      <span>รับลิงก์ดาวน์โหลดพร้อมลงเว็บ OTA และโซเชียลภายใน 2–3 วัน</span>
+     </div>
+    </div>
+   </div>
+   <div class="service-area-row" id="serviceAreaRow">
+    <span>พื้นที่ให้บริการ:</span>
+    <span class="area-pill">ภูเก็ต</span>
+    <span class="area-pill">พังงา</span>
+    <span class="area-pill">กระบี่</span>
+    <span class="area-pill">ต่างจังหวัด (เดินทางได้)</span>
+   </div>
+   <div class="price-note-box" id="priceNoteBox" role="note">
+    <strong>หมายเหตุ:</strong> ราคาจะขึ้นอยู่กับขนาดตัวบ้านและระยะทาง
+   </div>
+   <button type="button" class="quick-copy-btn" id="btnCopyBrief">📋 คัดลอกข้อความสอบถามด่วน (วางใน LINE / WhatsApp)</button>
+  </div>
+  <div class="contact-card-box" id="contactCardBox">
+   <div class="contact-card-stage" id="dockStage"></div>
+   <div class="contact-card-ctrl">
+    <input type="range" id="time" min="0" max="100" value="0" aria-label="สไลด์นามบัตรหน้าและหลัง">
+    <output id="tl" for="time">ด้านหน้า · 0%</output>
+   </div>
+   <div class="contact-card-actions">
+    <label class="dock-btn owner-only" style="cursor:pointer;margin:0">
+     + รูปหน้า
+     <input type="file" id="showcaseImgInput" accept="image/*" style="display:none">
+    </label>
+    <label class="dock-btn owner-only" style="cursor:pointer;margin:0">
+     + รูปหลัง
+     <input type="file" id="showcaseBackInput" accept="image/*" style="display:none">
+    </label>
+    <button type="button" class="dock-btn owner-only" id="btnSetCardUrl">+ ลิงก์รูป</button>
+    <button type="button" class="dock-btn danger owner-only" id="btnClearShowcaseImg" style="display:none">ลบรูป</button>
+   </div>
+   <div class="contact-below-btns" aria-label="ช่องทางการติดต่อด่วน">
+    <a class="contact-pill-btn primary" id="btnEmail" href="mailto:hello@example.com" target="_blank" rel="noopener noreferrer">✉ ส่งอีเมล</a>
+    <a class="contact-pill-btn" id="btnLine" href="https://line.me/ti/p/your-line-id" target="_blank" rel="noopener">💬 แอดไลน์</a>
+    <a class="contact-pill-btn" id="btnWhatsapp" href="https://wa.me/66805195750" target="_blank" rel="noopener">📱 WhatsApp</a>
+    <a class="contact-pill-btn" id="btnPhone" href="tel:+66805195750" target="_blank" rel="noopener noreferrer">📞 +66805195750</a>
+   </div>
+  </div>
+ </div>
+</main>
+
+<footer>
+ <span id="footerText">© 2026 อินทัช · ช่างภาพวิลล่า · สงวนลิขสิทธิ์ภาพทั้งหมด</span>
+ <span id="footerTag">Villa Set Portfolio · Architectural Photography</span>
+</footer>
+</div>
+
+<!-- Set Slideshow Lightbox Dialog -->
+<dialog id="setViewerDlg">
+ <div class="viewer-top">
+  <div>
+   <span class="viewer-set-title" id="vSetTitle"></span>
+   <span class="viewer-set-sub" id="vSetSub"></span>
+  </div>
+  <div style="font-size:13px;color:var(--muted)" id="vSetHint">ใช้ปุ่ม ‹ › หรือลูกศรซ้าย-ขวาเพื่อเลื่อนดูภาพในเซ็ตนี้</div>
+ </div>
+ <div class="viewer-stage-wrap">
+  <div class="viewer-stage" id="vStage"></div>
+  <button type="button" class="slide-nav prev" id="vPrev" aria-label="ภาพก่อนหน้าในเซ็ต">‹</button>
+  <button type="button" class="slide-nav next" id="vNext" aria-label="ภาพถัดไปในเซ็ต">›</button>
+  <div class="slide-counter" id="vCounter">1 / 1</div>
+ </div>
+ <div class="cap">
+  <div>
+   <strong id="vItemTitle"></strong><br>
+   <span id="vItemNote" style="font-size:14px;color:var(--muted)"></span>
+  </div>
+  <div class="cap-actions">
+   <button type="button" class="owner-dl-btn" id="vOwnerDownload">⬇ โหลดภาพ</button>
+   <button type="button" id="vClose">ปิด</button>
+  </div>
+ </div>
+ <div class="viewer-edit-panel" id="viewerEditPanel">
+  <div style="font-size:12px;color:var(--accent);font-weight:500;margin-bottom:8px">✎ แก้ไขข้อความในหน้านี้ (บันทึกอัตโนมัติในโหมดหลังบ้าน)</div>
+  <div class="viewer-edit-grid">
+   <div class="viewer-edit-field">
+    <label for="vEditSetTitle">ชื่อเซ็ตวิลล่า</label>
+    <input type="text" id="vEditSetTitle">
+   </div>
+   <div class="viewer-edit-field">
+    <label for="vEditSetLoc">ทำเล / จังหวัด</label>
+    <input type="text" id="vEditSetLoc">
+   </div>
+   <div class="viewer-edit-field">
+    <label for="vEditItemLabel">ชื่อ/คำบรรยายภาพนี้</label>
+    <input type="text" id="vEditItemLabel">
+   </div>
+   <div class="viewer-edit-field">
+    <label for="vEditSetSub">คำบรรยายเซ็ต</label>
+    <input type="text" id="vEditSetSub">
+   </div>
+  </div>
+ </div>
+ <div class="thumb-strip" id="vThumbs" role="tablist" aria-label="ภาพย่อในเซ็ตวิลล่า"></div>
+</dialog>
+
+<!-- Fullscreen Zoom Overlay -->
+<div class="zoom-overlay" id="zoomOverlay" role="dialog" aria-modal="true" aria-label="ขยายภาพเต็มจอ">
+ <div class="zoom-bar">
+  <span id="zoomCaption"></span>
+  <div class="zoom-tools">
+   <button type="button" class="zoom-pill" id="zoomOutBtn">−</button>
+   <button type="button" class="zoom-pill" id="zoomResetBtn">100%</button>
+   <button type="button" class="zoom-pill" id="zoomInBtn">+</button>
+   <button type="button" class="zoom-pill" id="zoomCloseBtn">✕ ปิด</button>
+  </div>
+ </div>
+ <div class="zoom-canvas" id="zoomCanvas">
+  <div class="zoom-target" id="zoomTarget"></div>
+ </div>
+ <div class="zoom-hint" id="zoomHint">จีบนิ้วเพื่อซูม · แตะ 2 ครั้งเพื่อขยาย · ลากเพื่อเลื่อนดู</div>
+</div>
+
+<!-- Owner PIN Modal -->
+<dialog id="pinDlg" class="modal-box" style="max-width:420px">
+ <h3>เข้าสู่ระบบหลังบ้าน (เจ้าของเว็บ)</h3>
+ <form id="pinForm">
+  <div class="field">
+   <label for="pinInput">รหัส PIN สำหรับเจ้าของเว็บ</label>
+   <input id="pinInput" type="password" value="" placeholder="กรอกรหัส PIN" required="" autocomplete="off">
+  </div>
+  <div class="modal-foot">
+   <button type="button" class="adm-btn" id="pinCancel">ยกเลิก</button>
+   <button type="submit" class="btn">ยืนยันและเข้าสู่ระบบ</button>
+  </div>
+ </form>
+</dialog>
+
+<!-- Modal: Add / Edit Villa Set -->
+<dialog id="setDlg" class="modal-box">
+ <h3 id="setDlgTitle">เพิ่มเซ็ตวิลล่าใหม่</h3>
+ <form id="setForm">
+  <div class="field-row">
+   <div class="field">
+    <label for="sLoc">จังหวัด / ทำเล</label>
+    <input id="sLoc" type="text" required="" placeholder="เช่น ภูเก็ต · เกาะแก้ว">
+   </div>
+   <div class="field">
+    <label for="sCat">หมวดหมู่</label>
+    <select id="sCat">
+     <option value="กลางวัน">กลางวัน (Daylight)</option>
+     <option value="พลบค่ำ">พลบค่ำ (Twilight)</option>
+     <option value="ภายใน">ภายใน (Interior)</option>
+    </select>
+   </div>
+  </div>
+  <div class="field-row">
+   <div class="field">
+    <label for="sTitleTh">ชื่อเซ็ตวิลล่า (ไทย)</label>
+    <input id="sTitleTh" type="text" placeholder="เช่น พูลวิลล่าสระว่ายน้ำส่วนตัว">
+   </div>
+   <div class="field">
+    <label for="sTitleEn">Villa Set Title (EN)</label>
+    <input id="sTitleEn" type="text" placeholder="e.g. Private Pool Villa Set">
+   </div>
+  </div>
+  <div class="field-row">
+   <div class="field">
+    <label for="sListingEnabled">แท็บเน้นสถานะหลังนี้ (ขาย / เช่า)</label>
+    <select id="sListingEnabled">
+     <option value="1">เปิดแสดงแท็บ</option>
+     <option value="0">ปิด / ไม่แสดงแท็บ</option>
+    </select>
+   </div>
+   <div class="field">
+    <label for="sListingType">ประเภทประกาศ</label>
+    <select id="sListingType">
+     <option value="sale">สำหรับขาย (For Sale)</option>
+     <option value="rent">สำหรับเช่า (For Rent)</option>
+     <option value="both">ขายและเช่า (Sale &amp; Rent)</option>
+    </select>
+   </div>
+  </div>
+  <input id="sCode" type="hidden">
+  <input id="sSubTh" type="hidden">
+  <input id="sSubEn" type="hidden">
+
+  <div class="set-items-panel">
+   <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap">
+    <strong style="font-size:14px">รูปภาพ/วิดีโอในเซ็ตนี้ (<span id="setItemsCount">0</span> รายการ)</strong>
+    <div style="display:flex;gap:6px;flex-wrap:wrap">
+     <label class="adm-btn primary" style="cursor:pointer;margin:0">
+      + เลือกรูปภาพ (หลายรูปได้)
+      <input id="multiImgInput" type="file" accept="image/*" multiple="" style="display:none">
+     </label>
+     <button type="button" class="adm-btn primary" id="btnAddImgUrlToSet">+ ลิงก์รูปภาพ</button>
+     <button type="button" class="adm-btn" id="btnAddVideoToSet">+ วิดีโอ/ลิงก์</button>
+     <button type="button" class="adm-btn" id="btnAddSvgToSet">+ ภาพจำลอง</button>
+    </div>
+   </div>
+   <div class="hint">กรอกทำเลและเพิ่มรูปภาพหรือวิดีโอของวิลล่าหลังนี้ได้เลย (รองรับลิงก์จาก Google Drive หรือลิงก์รูปตรง)</div>
+   <div id="imgUrlInlineBox" style="display:none;margin-top:10px;padding:10px;border-radius:14px;background:var(--surface);border:1px solid var(--accent)">
+    <div style="display:flex;flex-direction:column;gap:8px">
+     <textarea id="imgUrlInlineInput" rows="3" placeholder="วางลิงก์จาก Google Drive หรือลิงก์รูปตรง (https://...) ได้หลายลิงก์ โดยแยกบรรทัดละ 1 ลิงก์" style="width:100%;padding:8px 11px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink);font:inherit;font-size:13px;resize:vertical"></textarea>
+     <div style="display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap;align-items:center">
+      <button type="button" class="adm-btn primary" id="btnConfirmImgUrlInline">เพิ่มลิงก์ทั้งหมด</button>
+      <button type="button" class="adm-btn" id="btnCancelImgUrlInline">ซ่อน</button>
+     </div>
+    </div>
+   </div>
+   <div class="set-item-list" id="setItemsList"></div>
+  </div>
+
+  <div class="modal-foot">
+   <button type="button" class="adm-btn" id="setCancel">ยกเลิก</button>
+   <button type="submit" class="btn">บันทึกเซ็ตวิลล่า</button>
+  </div>
+ </form>
+</dialog>
+
+<!-- Modal: Add Video or SVG Item into Draft Set -->
+<dialog id="subMediaDlg" class="modal-box" style="max-width:500px">
+ <h3 id="subMediaTitle">เพิ่มสื่อเข้าเซ็ตนี้</h3>
+ <form id="subMediaForm">
+  <div class="field">
+   <label for="subKind">ประเภท</label>
+   <select id="subKind">
+    <option value="video-url">ลิงก์วิดีโอ (YouTube / Vimeo / MP4)</option>
+    <option value="video-file">อัปโหลดไฟล์วิดีโอจากเครื่อง (.mp4 / .webm)</option>
+    <option value="svg">ภาพวาดจำลองแสงวิลล่า</option>
+   </select>
+  </div>
+  <div class="field-row">
+   <div class="field">
+    <label for="subLabelTh">ชื่อมุม/ห้องในเซ็ตนี้ (ไทย)</label>
+    <input id="subLabelTh" type="text" required="" placeholder="เช่น สระว่ายน้ำ · มุมกว้าง">
+   </div>
+   <div class="field">
+    <label for="subLabelEn">Angle / Room Label (EN)</label>
+    <input id="subLabelEn" type="text" placeholder="e.g. Swimming Pool · Wide">
+   </div>
+  </div>
+  <div class="field" id="subUrlGrp">
+   <label id="subUrlLabel" for="subUrl">ลิงก์วิดีโอ (YouTube / Vimeo / .mp4)</label>
+   <input id="subUrl" type="url" placeholder="https://www.youtube.com/watch?v=...">
+  </div>
+  <div class="field" id="subFileGrp" style="display:none">
+   <label for="subFile">ไฟล์วิดีโอ (.mp4 / .webm)</label>
+   <input id="subFile" type="file" accept="video/mp4,video/webm,video/quicktime">
+  </div>
+  <div class="field-row" id="subSvgGrp" style="display:none">
+   <div class="field">
+    <label for="subLight">ช่วงแสง (0–1)</label>
+    <input id="subLight" type="number" step="0.05" min="0" max="1" value="0.5">
+   </div>
+   <div class="field">
+    <label for="subFlip">กลับด้าน</label>
+    <select id="subFlip">
+     <option value="0">ปกติ</option>
+     <option value="1">กลับด้าน</option>
+    </select>
+   </div>
+  </div>
+  <div class="modal-foot">
+   <button type="button" class="adm-btn" id="subMediaCancel">ยกเลิก</button>
+   <button type="submit" class="btn">เพิ่มเข้าเซ็ตนี้</button>
+  </div>
+ </form>
+</dialog>
+
+<!-- Modal: Edit Brand Name & Contact -->
+<dialog id="siteDlg" class="modal-box">
+ <h3>แก้ไขชื่อและข้อมูลติดต่อ</h3>
+ <form id="siteForm">
+  <div class="field-row">
+   <div class="field">
+    <label for="sBrandTh">ชื่อแบรนด์ / ชื่อช่างภาพ (ไทย)</label>
+    <input id="sBrandTh" type="text" required="">
+   </div>
+   <div class="field">
+    <label for="sBrandEn">Brand / Photographer Name (EN)</label>
+    <input id="sBrandEn" type="text" required="">
+   </div>
+  </div>
+  <div class="field">
+   <label for="sHeroTh">หัวข้อหลักหน้าแรก (ไทย)</label>
+   <input id="sHeroTh" type="text" required="">
+  </div>
+  <div class="field">
+   <label for="sHeroEn">Hero Headline (EN)</label>
+   <input id="sHeroEn" type="text" required="">
+  </div>
+  <div class="field">
+   <label for="sSubTh">คำอธิบายหน้าแรก (ไทย)</label>
+   <textarea id="sSubTh"></textarea>
+  </div>
+  <div class="field">
+   <label for="sSubEn">Hero Description (EN)</label>
+   <textarea id="sSubEn"></textarea>
+  </div>
+  <div class="field-row">
+   <div class="field">
+    <label for="sEmail">อีเมลติดต่อ</label>
+    <input id="sEmail" type="email" required="">
+   </div>
+   <div class="field">
+    <label for="sLine">ลิงก์ LINE</label>
+    <input id="sLine" type="url" required="">
+   </div>
+  </div>
+  <div class="modal-foot">
+   <button type="button" class="adm-btn" id="siteCancel">ยกเลิก</button>
+   <button type="submit" class="btn">บันทึกข้อมูล</button>
+  </div>
+ </form>
+</dialog>
+
+<!-- Modal: Export Updated HTML Code -->
+<dialog id="codeExportDlg" class="modal-box" style="max-width:760px">
+ <h3>เซฟโค้ด HTML ที่อัปเดตแล้ว</h3>
+ <p style="margin:0 0 10px;font-size:13.5px;color:var(--muted)">คัดลอกโค้ดด้านล่างไปวางทับไฟล์ HTML หรือกดดาวน์โหลดไฟล์เพื่อเก็บข้อมูลที่แก้ไขถาวร</p>
+ <div class="field">
+  <textarea id="exportedCodeArea" readonly="" style="min-height:260px;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:12px;line-height:1.5"></textarea>
+ </div>
+ <div class="modal-foot">
+  <button type="button" class="adm-btn" id="btnCopyExportCode">📋 คัดลอกโค้ดทั้งหมด</button>
+  <button type="button" class="adm-btn" id="btnDownloadExportCode">⬇ ดาวน์โหลดเป็น index.html</button>
+  <button type="button" class="btn" id="codeExportClose">ปิด</button>
+ </div>
+</dialog>
+
+<button type="button" class="admin-fab" id="adminFab" aria-pressed="false"><span id="fabLabel">*</span></button>
+<div class="toast" id="statusToast" role="status" aria-live="polite"></div>
+
+<!-- Centered Large 3D Business Card Lightbox -->
+<div class="card-lightbox" id="cardLightbox" role="dialog" aria-modal="true" aria-label="นามบัตรขนาดใหญ่แบบหมุนหน้าหลัง">
+ <div class="card-lightbox-top">
+  <h3 class="card-lightbox-title" id="cardLightboxTitle">นามบัตรช่างภาพ</h3>
+  <button type="button" class="zoom-pill" id="cardLightboxClose">✕ ปิด</button>
+ </div>
+ <div class="card-lightbox-stage" id="cardLightboxStage"></div>
+ <div class="card-lightbox-ctrl">
+  <div class="card-lightbox-row">
+   <input type="range" id="cardLightboxRange" min="0" max="100" value="0" aria-label="หมุนนามบัตรหน้าและหลังขนาดใหญ่">
+   <output id="cardLightboxOut" for="cardLightboxRange" style="font-size:13px;font-weight:500;color:var(--accent);white-space:nowrap">ด้านหน้า · 0%</output>
+  </div>
+  <div class="card-lightbox-btns">
+   <span class="card-hint-txt" id="cardLightboxHint">ลากซ้าย-ขวาบนนามบัตร หรือกดปุ่มเพื่อพลิกหน้า/หลัง</span>
+   <div style="display:flex;gap:8px;flex-wrap:wrap">
+    <button type="button" class="adm-btn" id="cardFlipFrontBtn">◀ ด้านหน้า</button>
+    <button type="button" class="adm-btn primary" id="cardFlipBackBtn">ด้านหลัง ▶</button>
+   </div>
+  </div>
+ </div>
+</div>
+
+<script>
+// === Visitor Download Deterrence (Context Menu & Drag Guard) ===
+document.addEventListener('contextmenu', function(e){
+  if (ownerUnlocked) return;
+  if (e.target && e.target.closest('img, svg, video, .stage, .tile .img, .viewer-stage-wrap, .zoom-overlay, .contact-card-stage, .card-lightbox-stage')) {
+    e.preventDefault();
+    showToast('สงวนลิขสิทธิ์ภาพถ่าย · ห้ามดาวน์โหลดหรือคัดลอกภาพ');
+  }
+});
+
+document.addEventListener('dragstart', function(e){
+  if (ownerUnlocked) return;
+  if (e.target && e.target.closest('img, svg, video, .stage, .tile .img, .viewer-stage-wrap, .zoom-overlay')) {
+    e.preventDefault();
+  }
+});
+
+function attachMediaShields(){
+  var selectors = ['.stage', '.tile .img', '.zoom-canvas'];
+  selectors.forEach(function(sel){
+    document.querySelectorAll(sel).forEach(function(box){
+      if (!box.querySelector('.media-shield')) {
+        var shield = document.createElement('div');
+        shield.className = 'media-shield';
+        shield.setAttribute('aria-hidden', 'true');
+        box.appendChild(shield);
+      }
+    });
+  });
+}
+
+var INITIAL_HTML_TEMPLATE = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+var STORAGE_KEY = 'villa_portfolio_state_v1';
+var ownerUnlocked = false;
+
+function $(id){ return document.getElementById(id); }
+function escAttr(s){
+  return String(s || '')
+    .replace(/&/g, '&amp;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
+function clone(obj){ return JSON.parse(JSON.stringify(obj)); }
+
+// แปลงลิงก์แชร์ Google Drive ให้เป็นลิงก์รูปตรงสำหรับแท็ก <img>
+function extractGoogleDriveId(rawUrl){
+  var url = String(rawUrl || '').trim();
+  if (!url) return '';
+  var mFile = url.match(/drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/);
+  if (mFile && mFile[1]) return mFile[1];
+  var mOpen = url.match(/[?&]id=([a-zA-Z0-9_-]+)/);
+  if ((url.indexOf('drive.google.com') !== -1 || url.indexOf('docs.google.com') !== -1) && mOpen && mOpen[1]) return mOpen[1];
+  var mUc = url.match(/drive\.usercontent\.google\.com\/download\?id=([a-zA-Z0-9_-]+)/);
+  if (mUc && mUc[1]) return mUc[1];
+  var mLh = url.match(/(?:lh\d+|drive-thirdparty)\.googleusercontent\.com\/(?:d\/)?([a-zA-Z0-9_-]+)/);
+  if (mLh && mLh[1]) return mLh[1];
+  return '';
+}
+
+function normalizeImageUrl(rawUrl){
+  var url = String(rawUrl || '').trim().replace(/^[,;\s]+|[,;\s]+$/g, '');
+  if (!url) return '';
+  if (/^https?:\/\/(lh\d+|drive-thirdparty)\.googleusercontent\.com\//i.test(url) && url.indexOf('=') === -1) {
+    return url + '=w1600';
+  }
+  var driveId = extractGoogleDriveId(url);
+  if (driveId) {
+    return 'https://lh3.googleusercontent.com/d/' + driveId + '=w1600';
+  }
+  return url;
+}
+
+function showToast(msg){
+  var t = $('statusToast');
+  if (!t) return;
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(showToast._timer);
+  showToast._timer = setTimeout(function(){ t.classList.remove('show'); }, 2400);
+}
+
+var INITIAL_DATA = {"lang":"th","ownerPin":"2538","watermarkText":"InthatPhotographer","site":{"brandTh":"อินทัช · ช่างภาพวิลล่า","brandEn":"Inthat · Villa Photographer","heroTh":"ตัวอย่างผลงาน รับจ้างถ่ายภาพวิดีโอและภาพมุมสูง","heroEn":"Villa Photography, Walkthrough Video & Aerial Portfolio","subTh":"ผมแยกผลงานเป็นเซ็ตตามวิลล่าแต่ละหลัง เพื่อให้ดูภาพรวมและเลื่อนดูทีละมุมในหลังเดียวกันได้สะดวกโดยไม่ปะปนกัน","subEn":"Organized into villa sets so you can browse every angle of each property in one place.","email":"hello@example.com","line":"https://line.me/ti/p/your-line-id","heroCardImg":"","heroCardBackImg":""},"sets":[{"id":"villa-01","c":"กลางวัน","loc":"เกาะแก้ว · ภูเก็ต","titleTh":"พูลวิลล่าสวนทรอปิคอล สระว่ายน้ำส่วนตัว","titleEn":"Tropical Pool Villa Set","subTh":"สระว่ายน้ำ สวนร่มรื่น และตัวบ้าน","subEn":"Pool, tropical garden & exterior","coverIdx":0,"listingEnabled":true,"listingType":"sale","items":[{"kind":"svg","labelTh":"มุมหลักพูลวิลล่า · แสงกลางวัน","labelEn":"Pool Villa Main · Daylight","t":0.55,"f":0,"src":""},{"kind":"svg","labelTh":"สระว่ายน้ำและเฉลียงริมน้ำ","labelEn":"Pool & Sun Deck","t":0.5,"f":1,"src":""},{"kind":"svg","labelTh":"มุมสวนทรอปิคอลและตัวบ้าน","labelEn":"Tropical Garden & Facade","t":0.6,"f":0,"src":""}]},{"id":"villa-02","c":"พลบค่ำ","loc":"เชิงทะเล · ภูเก็ต","titleTh":"โมเดิร์นลักชัวรีวิลล่า แสงยามค่ำ","titleEn":"Modern Luxury Villa Twilight Set","subTh":"แสงไฟสถาปัตยกรรมและริมสระ","subEn":"Architectural lighting & pool edge","coverIdx":0,"listingEnabled":true,"listingType":"rent","items":[{"kind":"svg","labelTh":"บรรยากาศพลบค่ำ · ไฟสระว่ายน้ำ","labelEn":"Twilight Pool & Lighting","t":0.18,"f":0,"src":""},{"kind":"svg","labelTh":"มุมสถาปัตยกรรมยามโพล้เพล้","labelEn":"Dusk Architectural Angle","t":0.22,"f":1,"src":""}]},{"id":"villa-03","c":"ภายใน","loc":"ราไวย์ · ภูเก็ต","titleTh":"ห้องนั่งเล่นและพื้นที่รับประทานอาหารแบบเปิดโล่ง","titleEn":"Open-Plan Living & Dining Set","listingEnabled":false,"listingType":"both","subTh":"คุมโทนแสงธรรมชาติและเฟอร์นิเจอร์","subEn":"Balanced natural light & interiors","coverIdx":0,"items":[{"kind":"image","labelTh":"ภาพวิลล่า #12","labelEn":"Villa Photo #12","src":"https://lh3.googleusercontent.com/d/1XM8_NbxzPZTFIMHKW1yUBlkcA5IvyBFO=w1600","t":0.5,"f":0},{"kind":"image","labelTh":"ภาพวิลล่า #4","labelEn":"Villa Photo #4","src":"https://lh3.googleusercontent.com/d/18hUDn68cyyCpeEsf6PHTjpXMdF2tPd6Y=w1600","t":0.5,"f":0},{"kind":"image","labelTh":"ภาพวิลล่า #5","labelEn":"Villa Photo #5","src":"https://lh3.googleusercontent.com/d/1B2iHq6WLtnyFesZhABQ-dRv4FtvODdNv=w1600","t":0.5,"f":0},{"kind":"image","labelTh":"ภาพวิลล่า #6","labelEn":"Villa Photo #6","src":"https://lh3.googleusercontent.com/d/1HR_bcM1S-p2Yu9lAUDP3VHLJKhOey4YT=w1600","t":0.5,"f":0},{"kind":"image","labelTh":"ภาพวิลล่า #7","labelEn":"Villa Photo #7","src":"https://lh3.googleusercontent.com/d/1MmYencV4dHukbJl36HoDppKIsyJEyMnL=w1600","t":0.5,"f":0},{"kind":"image","labelTh":"ภาพวิลล่า #8","labelEn":"Villa Photo #8","src":"https://lh3.googleusercontent.com/d/1MptzMRSCeIa4IISCEHx8I8Ioxvp0o4Ta=w1600","t":0.5,"f":0},{"kind":"image","labelTh":"ภาพวิลล่า #9","labelEn":"Villa Photo #9","src":"https://lh3.googleusercontent.com/d/1QTI9L2YRxpha0wxBPG3Fz50IS87zwamx=w1600","t":0.5,"f":0},{"kind":"image","labelTh":"ภาพวิลล่า #10","labelEn":"Villa Photo #10","src":"https://lh3.googleusercontent.com/d/1TP3-h8xgH0vNKsJrbCXftQFwljMOpPbj=w1600","t":0.5,"f":0},{"kind":"image","labelTh":"ภาพวิลล่า #11","labelEn":"Villa Photo #11","src":"https://lh3.googleusercontent.com/d/1TW6qG-JPbNGY1AY1qp_4AwdFljHRCdci=w1600","t":0.5,"f":0},{"kind":"image","labelTh":"ภาพวิลล่า #13","labelEn":"Villa Photo #13","src":"https://lh3.googleusercontent.com/d/1ZZ0vDGCdo11GEvtmJwJsya0gHXtrwz_j=w1600","t":0.5,"f":0},{"kind":"image","labelTh":"ภาพวิลล่า #14","labelEn":"Villa Photo #14","src":"https://lh3.googleusercontent.com/d/1ZhDGCTnaXWev2rCrK-17mi_WsLyTI7QO=w1600","t":0.5,"f":0},{"kind":"image","labelTh":"ภาพวิลล่า #15","labelEn":"Villa Photo #15","src":"https://lh3.googleusercontent.com/d/1_x2bcSol8BpoFdUZySPztPs07BsoxGIT=w1600","t":0.5,"f":0},{"kind":"image","labelTh":"ภาพวิลล่า #16","labelEn":"Villa Photo #16","src":"https://lh3.googleusercontent.com/d/1gHwEp6_SofPikOWPe4JxIvVNJEdQvnuJ=w1600","t":0.5,"f":0},{"kind":"image","labelTh":"ภาพวิลล่า #17","labelEn":"Villa Photo #17","src":"https://lh3.googleusercontent.com/d/1ivfbRMuoenVQshNYunFXhB9loCm5BIDZ=w1600","t":0.5,"f":0},{"kind":"image","labelTh":"ภาพวิลล่า #18","labelEn":"Villa Photo #18","src":"https://lh3.googleusercontent.com/d/1mYtk8C38sRzSQzd5pWY3lPDoOR_TYkfq=w1600","t":0.5,"f":0},{"kind":"image","labelTh":"ภาพวิลล่า #19","labelEn":"Villa Photo #19","src":"https://lh3.googleusercontent.com/d/1nQJzHA5AfXnnh7C7MRa-8lSQ3lgR7qkS=w1600","t":0.5,"f":0},{"kind":"image","labelTh":"ภาพวิลล่า #20","labelEn":"Villa Photo #20","src":"https://lh3.googleusercontent.com/d/1pMSulGGdvR3O5eXz66jTWevCCcxT8G1m=w1600","t":0.5,"f":0},{"kind":"image","labelTh":"ภาพวิลล่า #21","labelEn":"Villa Photo #21","src":"https://lh3.googleusercontent.com/d/1tps2XH5nI-CjselKrDv1KCmdaORWYY0B=w1600","t":0.5,"f":0},{"kind":"image","labelTh":"ภาพวิลล่า #22","labelEn":"Villa Photo #22","src":"https://lh3.googleusercontent.com/d/1tyMCOG2-zdNQ2cNZFL5ggdAeboeZqNAY=w1600","t":0.5,"f":0},{"kind":"image","labelTh":"ภาพวิลล่า #23","labelEn":"Villa Photo #23","src":"https://lh3.googleusercontent.com/d/1u6ROOLk8CAnpnKIjcC21E0qjdoh4t_eL=w1600","t":0.5,"f":0}]}]};
+var I18N = {
+  th: {
+    pageTitle: 'พอร์ตโฟลิโอช่างภาพวิลล่า',
+    navWork: 'เซ็ตวิลล่า',
+    navService: 'บริการ',
+    navContact: 'ติดต่อ',
+    heroCtaWork: 'ดูเซ็ตวิลล่าทั้งหมด',
+    heroCtaContact: 'ขอใบเสนอราคา',
+    workTitle: 'ผลงานแยกเป็นเซ็ตวิลล่า',
+    workLead: 'กดที่การ์ดวิลล่าหลังใดก็ได้ เพื่อเปิดเลื่อนดูภาพและวิดีโอทั้งหมดในเซ็ตนั้น',
+    svcTitle: 'แพ็กเกจบริการ',
+    svcLead: 'เลือกแพ็กเกจภาพและวิดีโอตามลักษณะวิลล่าและการใช้งานจริง',
+    svc1T: 'แพ็กเกจภาพถ่ายวิลล่า',
+    svc1D: 'เก็บภาพนิ่งครบทั้งภายนอก สระว่ายน้ำ สวน และห้องภายใน ทั้งแสงกลางวันและแสงพลบค่ำ',
+    svc2T: 'แพ็กเกจวิดีโอเดินชม',
+    svc2D: 'ถ่ายวิดีโอเล่าเรื่องและเดินชมพื้นที่วิลล่าอย่างลื่นไหล เหมาะสำหรับโพสต์โซเชียลและปล่อยเช่า',
+    svc3T: 'แพ็กเกจภาพและวิดีโอครบเซ็ต',
+    svc3D: 'รวมภาพถ่ายและวิดีโอวิลล่าเป็นเซ็ตเดียว พร้อมมุมสูงสำหรับเจ้าของโครงการ นายหน้า และรีสอร์ท',
+    ctTitle: 'มีวิลล่าที่อยากให้ถ่ายเป็นเซ็ต?',
+    ctLead: 'แจ้งทำเล จำนวนวิลล่า วันที่สะดวก และแพ็กเกจที่สนใจ แล้วผมจะตอบกลับพร้อมใบเสนอราคาโดยเร็ว',
+    bookingStepsHtml:
+      '<div class="b-step"><span class="b-step-num">01</span><div class="b-step-txt"><strong>ส่งข้อมูลวิลล่าเบื้องต้น</strong><span>ทำเล จำนวนห้องนอน และเลือกแพ็กเกจภาพหรือวิดีโอ</span></div></div>' +
+      '<div class="b-step"><span class="b-step-num">02</span><div class="b-step-txt"><strong>เสนอราคา &amp; นัดช่วงแสงสวยที่สุด</strong><span>วางแผนเวลาถ่ายกลางวัน-พลบค่ำให้เหมาะกับทิศทางแดดของบ้าน</span></div></div>' +
+      '<div class="b-step"><span class="b-step-num">03</span><div class="b-step-txt"><strong>ส่งมอบไฟล์ความละเอียดสูง</strong><span>รับลิงก์ดาวน์โหลดพร้อมลงเว็บ OTA และโซเชียลภายใน 2–3 วัน</span></div></div>',
+    serviceAreaHtml:
+      '<span>พื้นที่ให้บริการ:</span><span class="area-pill">ภูเก็ต</span><span class="area-pill">พังงา</span><span class="area-pill">กระบี่</span><span class="area-pill">ต่างจังหวัด (เดินทางได้)</span>',
+    copyBriefBtn: '📋 คัดลอกข้อความสอบถามด่วน (วางใน LINE / WhatsApp)',
+    copyBriefText: 'สวัสดีครับ สนใจจ้างถ่ายภาพ/วิดีโอวิลล่า\n- ทำเล: \n- จำนวนวิลล่า / ห้องนอน: \n- วันที่สะดวก: \n- แพ็กเกจที่สนใจ: ',
+    copyBriefToast: 'คัดลอกข้อความสอบถามเรียบร้อยแล้ว',
+    priceNote: '<strong>หมายเหตุ:</strong> ราคาจะขึ้นอยู่กับขนาดตัวบ้านและระยะทาง',
+    btnEmail: '✉ ส่งอีเมล',
+    btnLine: '💬 แอดไลน์',
+    closeBtn: 'ปิด',
+    fabLocked: '*',
+    fabUnlocked: '🔓 หลังบ้าน',
+    footerSuffix: 'สงวนลิขสิทธิ์ภาพทั้งหมด',
+    cats: { 'ทั้งหมด': 'ทั้งหมด', 'กลางวัน': 'กลางวัน', 'พลบค่ำ': 'พลบค่ำ', 'ภายใน': 'ภายใน' },
+    viewSetCta: 'ดูทั้งเซ็ต →',
+    photoCountUnit: 'รูป',
+    listingLabels: { sale: 'สำหรับขาย', rent: 'สำหรับเช่า', both: 'ขายและเช่า' }
+  },
+  en: {
+    pageTitle: 'Villa Photographer Portfolio',
+    navWork: 'Villa Sets',
+    navService: 'Services',
+    navContact: 'Contact',
+    heroCtaWork: 'Browse Villa Sets',
+    heroCtaContact: 'Request a Quote',
+    workTitle: 'Portfolio Organized by Villa Set',
+    workLead: 'Click any villa card to open its full set of photos and walkthrough media.',
+    svcTitle: 'Service Packages',
+    svcLead: 'Choose photo and video coverage tailored to your property and marketing goals.',
+    svc1T: 'Villa Photography Package',
+    svc1D: 'Complete stills covering exteriors, pool, garden, and interiors across daylight and twilight.',
+    svc2T: 'Walkthrough Video Package',
+    svc2D: 'Smooth storytelling walkthroughs ideal for social media campaigns and vacation rentals.',
+    svc3T: 'Complete Photo & Video Set',
+    svc3D: 'Combined photo, walkthrough video, and aerial angles for developers, agents, and resorts.',
+    ctTitle: 'Have a villa set to shoot?',
+    ctLead: 'Share the location, number of villas, preferred dates, and package for a prompt quote.',
+    bookingStepsHtml:
+      '<div class="b-step"><span class="b-step-num">01</span><div class="b-step-txt"><strong>Share Initial Villa Details</strong><span>Location, bedroom count, and preferred photo or video package</span></div></div>' +
+      '<div class="b-step"><span class="b-step-num">02</span><div class="b-step-txt"><strong>Quote &amp; Best Light Scheduling</strong><span>Plan daylight and twilight timing around your property’s sun direction</span></div></div>' +
+      '<div class="b-step"><span class="b-step-num">03</span><div class="b-step-txt"><strong>High-Resolution Delivery</strong><span>Receive download links ready for OTAs and social channels in 2–3 days</span></div></div>',
+    serviceAreaHtml:
+      '<span>Service Areas:</span><span class="area-pill">Phuket</span><span class="area-pill">Phang Nga</span><span class="area-pill">Krabi</span><span class="area-pill">Other Provinces</span>',
+    copyBriefBtn: '📋 Copy Quick Inquiry Template (for LINE / WhatsApp)',
+    copyBriefText: 'Hello, I would like to inquire about villa photography/video:\n- Location: \n- Villas / Bedrooms: \n- Preferred Dates: \n- Package of Interest: ',
+    copyBriefToast: 'Quick inquiry template copied',
+    priceNote: '<strong>Note:</strong> Pricing varies depending on property size and travel distance.',
+    btnEmail: '✉ Email',
+    btnLine: '💬 LINE',
+    closeBtn: 'Close',
+    fabLocked: '*',
+    fabUnlocked: '🔓 Admin',
+    footerSuffix: 'All rights reserved',
+    cats: { 'ทั้งหมด': 'All', 'กลางวัน': 'Daylight', 'พลบค่ำ': 'Twilight', 'ภายใน': 'Interior' },
+    viewSetCta: 'View Set →',
+    photoCountUnit: 'shots',
+    listingLabels: { sale: 'For Sale', rent: 'For Rent', both: 'Sale & Rent' }
+  }
+};
+
+function loadState(){
+  var parsed = null;
+  try {
+    var raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) parsed = JSON.parse(raw);
+  } catch(e){}
+  var fallbackSetsById = {};
+  if (Array.isArray(INITIAL_DATA.sets)) {
+    INITIAL_DATA.sets.forEach(function(s){
+      if (s && s.id) fallbackSetsById[s.id] = s;
+    });
+  }
+  function hydrateSetItems(setObj){
+    if (!setObj || !Array.isArray(setObj.items)) return setObj;
+    var fbSet = setObj.id ? fallbackSetsById[setObj.id] : null;
+    setObj.items = setObj.items.map(function(it, idx){
+      if (!it || it.kind !== 'image') return it;
+      var normalizedSrc = normalizeImageUrl(it.src || '');
+      if (!normalizedSrc && fbSet && Array.isArray(fbSet.items) && fbSet.items[idx] && fbSet.items[idx].src) {
+        normalizedSrc = normalizeImageUrl(fbSet.items[idx].src);
+      }
+      return Object.assign({}, it, { src: normalizedSrc });
+    });
+    return setObj;
+  }
+  if (parsed) {
+    var chosenSets = (Array.isArray(parsed.sets) && parsed.sets.length)
+      ? clone(parsed.sets)
+      : clone(INITIAL_DATA.sets);
+    chosenSets = chosenSets.map(hydrateSetItems);
+    var chosenSite = Object.assign({}, INITIAL_DATA.site, parsed.site || {});
+    return {
+      lang: parsed.lang || INITIAL_DATA.lang,
+      ownerPin: '2538',
+      watermarkText: 'InthatPhotographer',
+      site: chosenSite,
+      sets: chosenSets
+    };
+  }
+  return {
+    lang: INITIAL_DATA.lang,
+    ownerPin: '2538',
+    watermarkText: 'InthatPhotographer',
+    site: Object.assign({}, INITIAL_DATA.site),
+    sets: clone(INITIAL_DATA.sets).map(hydrateSetItems)
+  };
+}
+
+var STATE = loadState();
+var activeCat = 'ทั้งหมด';
+
+function saveState(){
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({
+      lang: STATE.lang,
+      ownerPin: '2538',
+      watermarkText: 'InthatPhotographer',
+      site: STATE.site,
+      sets: STATE.sets
+    }));
+  } catch(e){
+    showToast('พื้นที่เก็บข้อมูลเบราว์เซอร์เต็ม แนะนำให้กด "เซฟโค้ด HTML" เพื่อเก็บไฟล์ไว้');
+  }
+}
+
+// Theme toggle
+(function(){
+  var savedTheme = '';
+  try { savedTheme = localStorage.getItem('villa_theme_pref') || ''; } catch(e){}
+  if (savedTheme === 'light' || savedTheme === 'dark') {
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  }
+  var btn = $('themeToggle');
+  if (btn) {
+    btn.addEventListener('click', function(){
+      var cur = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', cur);
+      try { localStorage.setItem('villa_theme_pref', cur); } catch(e){}
+    });
+  }
+})();
+
+// Image compression helper for uploaded photos
+function compressPhoto(file, maxDim, cb){
+  var reader = new FileReader();
+  reader.onload = function(ev){
+    var img = new Image();
+    img.onload = function(){
+      var w = img.width, h = img.height;
+      var scale = Math.min(1, (maxDim || 1400) / Math.max(w, h || 1));
+      var cw = Math.max(1, Math.round(w * scale));
+      var ch = Math.max(1, Math.round(h * scale));
+      var canvas = document.createElement('canvas');
+      canvas.width = cw;
+      canvas.height = ch;
+      var ctx = canvas.getContext('2d');
+      ctx.drawImage(img, 0, 0, cw, ch);
+      try {
+        cb(canvas.toDataURL('image/jpeg', 0.84));
+      } catch(e){
+        cb(ev.target.result);
+      }
+    };
+    img.onerror = function(){ cb(ev.target.result); };
+    img.src = ev.target.result;
+  };
+  reader.readAsDataURL(file);
+}
+
+// Villa SVG fallback illustration
+function villaSvg(t, f){
+  var light = Math.max(0, Math.min(1, Number(t) || 0.5));
+  var flip = f ? ' transform="translate(800,0) scale(-1,1)"' : '';
+  var skyTop = light < 0.3 ? '#1c2b3a' : (light < 0.65 ? '#5b8fb9' : '#73a6cf');
+  var skyBot = light < 0.3 ? '#46372c' : (light < 0.65 ? '#d9b589' : '#c8dde8');
+  var hillColor = light < 0.3 ? '#1a2528' : '#4a645d';
+  var wallColor = light < 0.3 ? '#2c3035' : '#e6e2d8';
+  var roofColor = light < 0.3 ? '#181b1e' : '#3a3f44';
+  var glassColor = light < 0.3 ? '#f4c77b' : '#8cb3c9';
+  var poolColor = light < 0.3 ? '#1d5b73' : '#3898b3';
+  var sunY = light < 0.3 ? 170 : 115;
+  var sunFill = light < 0.3 ? '#f2b866' : '#f2ebd9';
+  return '<svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ภาพวิลล่า">'
+    + '<defs><linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">'
+    + '<stop offset="0%" stop-color="' + skyTop + '"/><stop offset="100%" stop-color="' + skyBot + '"/>'
+    + '</linearGradient></defs>'
+    + '<g' + flip + '>'
+    + '<rect width="800" height="500" fill="url(#skyGrad)"/>'
+    + '<circle cx="510" cy="' + sunY + '" r="38" fill="' + sunFill + '" opacity="0.85"/>'
+    + '<path d="M0 310 Q210 250 430 300 T800 280 L800 500 L0 500 Z" fill="' + hillColor + '"/>'
+    + '<rect x="0" y="312" width="800" height="188" fill="#c7b89e" opacity="' + (light < 0.3 ? '0.35' : '0.88') + '"/>'
+    + '<rect x="250" y="185" width="170" height="128" fill="' + wallColor + '"/>'
+    + '<rect x="235" y="173" width="200" height="14" fill="' + roofColor + '"/>'
+    + '<rect x="272" y="198" width="54" height="36" fill="' + glassColor + '"/>'
+    + '<rect x="336" y="198" width="54" height="36" fill="' + glassColor + '"/>'
+    + '<rect x="210" y="238" width="205" height="75" fill="' + wallColor + '"/>'
+    + '<rect x="195" y="226" width="235" height="14" fill="' + roofColor + '"/>'
+    + '<rect x="228" y="252" width="68" height="48" fill="' + glassColor + '"/>'
+    + '<rect x="312" y="252" width="76" height="48" fill="' + glassColor + '"/>'
+    + '<path d="M510 315 Q518 250 532 208" stroke="#5b4636" stroke-width="7" fill="none"/>'
+    + '<ellipse cx="532" cy="204" rx="34" ry="11" transform="rotate(-18 532 204)" fill="#4d6b53"/>'
+    + '<ellipse cx="532" cy="204" rx="34" ry="11" transform="rotate(24 532 204)" fill="#3e5944"/>'
+    + '<rect x="362" y="325" width="188" height="48" rx="6" fill="' + poolColor + '"/>'
+    + '<line x1="382" y1="340" x2="455" y2="340" stroke="#ffffff" stroke-width="2" opacity="0.45"/>'
+    + '<line x1="450" y1="356" x2="530" y2="356" stroke="#ffffff" stroke-width="2" opacity="0.45"/>'
+    + '</g></svg>';
+}
+
+function getEmbedUrl(url){
+  if (!url) return '';
+  var yt = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/shorts\/)([A-Za-z0-9_-]{6,})/);
+  if (yt) return 'https://www.youtube.com/embed/' + yt[1];
+  var vm = url.match(/vimeo\.com\/(?:video\/)?(\d+)/);
+  if (vm) return 'https://player.vimeo.com/video/' + vm[1];
+  return '';
+}
+
+function renderItemThumb(it, altText){
+  if (!it) return villaSvg(0.5, 0);
+  if (it.kind === 'image' && it.src) {
+    var normSrc = normalizeImageUrl(it.src);
+    var safeSrc = escAttr(normSrc);
+    var fallbackSvg = villaSvg(it.t != null ? it.t : 0.5, it.f || 0);
+    return '<img src="' + safeSrc + '" alt="' + escAttr(altText || '') + '" loading="eager" data-fb-step="0" data-orig-src="' + escAttr(it.src) + '" onerror="window.handleImgFallback(this)">'
+      + '<span class="img-fallback-svg" style="display:none;width:100%;height:100%">' + fallbackSvg + '</span>';
+  }
+  if (it.kind === 'video-file' && it.src) {
+    return '<video src="' + escAttr(it.src) + '" muted playsinline preload="metadata"></video>';
+  }
+  if (it.kind === 'video-url') {
+    return '<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:#141a1f;color:#c8a472;font-size:12px">▶ VIDEO</div>';
+  }
+  return villaSvg(it.t != null ? it.t : 0.5, it.f || 0);
+}
+
+function renderItemFull(it, altText){
+  if (!it) return villaSvg(0.5, 0);
+  if (it.kind === 'image' && it.src) {
+    var normSrc = normalizeImageUrl(it.src);
+    var safeSrc = escAttr(normSrc);
+    var fallbackSvg = villaSvg(it.t != null ? it.t : 0.5, it.f || 0);
+    return '<img src="' + safeSrc + '" alt="' + escAttr(altText || '') + '" data-fb-step="0" data-orig-src="' + escAttr(it.src) + '" onerror="window.handleImgFallback(this)">'
+      + '<span class="img-fallback-svg" style="display:none;width:100%;height:100%">' + fallbackSvg + '</span>';
+  }
+  if (it.kind === 'video-file' && it.src) {
+    return '<video src="' + escAttr(it.src) + '" controls playsinline style="width:100%;height:100%;object-fit:contain"></video>';
+  }
+  if (it.kind === 'video-url') {
+    var emb = getEmbedUrl(it.src);
+    if (emb) {
+      return '<iframe src="' + escAttr(emb) + '" allow="autoplay; fullscreen" allowfullscreen style="width:100%;height:100%;border:0"></iframe>';
+    }
+    return '<video src="' + escAttr(it.src || '') + '" controls playsinline style="width:100%;height:100%;object-fit:contain"></video>';
+  }
+  return villaSvg(it.t != null ? it.t : 0.5, it.f || 0);
+}
+
+function getSetTitle(s){
+  return STATE.lang === 'en' ? (s.titleEn || s.titleTh || '') : (s.titleTh || s.titleEn || '');
+}
+function getSetSub(s){
+  return STATE.lang === 'en' ? (s.subEn || s.subTh || '') : (s.subTh || s.subEn || '');
+}
+function getItemLabel(it, idx, total){
+  var raw = STATE.lang === 'en' ? (it.labelEn || it.labelTh || '') : (it.labelTh || it.labelEn || '');
+  return raw || ((idx + 1) + ' / ' + total);
+}
+
+// === Auto-Sliding Hero Stage (Still Images & SVG Only, No Videos) ===
+var autoSlideIdx = 0;
+var autoPlaying = true;
+var autoTimer = null;
+var lastAutoSlidesKey = '';
+
+function getAutoSlides(){
+  var slides = [];
+  STATE.sets.forEach(function(s){
+    if (!Array.isArray(s.items)) return;
+    s.items.forEach(function(it, idx){
+      if (!it || (it.kind !== 'image' && it.kind !== 'svg')) return;
+      if (it.kind === 'image' && !it.src) return;
+      slides.push({
+        setTitle: getSetTitle(s),
+        label: getItemLabel(it, idx, s.items.length),
+        html: renderItemThumb(it, getSetTitle(s))
+      });
+    });
+  });
+  return slides;
+}
+
+function renderAutoSlider(forceReset){
+  var stage = $('stage');
+  var dotsEl = $('autoDots');
+  if (!stage || !dotsEl) return;
+  var slides = getAutoSlides();
+  if (!slides.length) {
+    stage.innerHTML = '<div class="auto-slider-wrap"><div class="auto-slide is-active">' + villaSvg(0.55, 0) + '</div></div>';
+    dotsEl.innerHTML = '';
+    return;
+  }
+  var key = slides.map(function(sl){ return sl.setTitle + '|' + sl.label; }).join('||');
+  var wrap = stage.querySelector('.auto-slider-wrap');
+  if (forceReset || key !== lastAutoSlidesKey || !wrap) {
+    lastAutoSlidesKey = key;
+    if (autoSlideIdx >= slides.length) autoSlideIdx = 0;
+    stage.innerHTML = '<div class="auto-slider-wrap">'
+      + slides.map(function(sl, i){
+          return '<div class="auto-slide' + (i === autoSlideIdx ? ' is-active' : '') + '" data-auto-slide-index="' + i + '">' + sl.html + '</div>';
+        }).join('')
+      + '</div>';
+    wrap = stage.querySelector('.auto-slider-wrap');
+  }
+  if (autoSlideIdx >= slides.length) autoSlideIdx = 0;
+  if (wrap) {
+    var allSlides = wrap.querySelectorAll('.auto-slide');
+    allSlides.forEach(function(el, i){
+      var wasActive = el.classList.contains('is-active');
+      if (i === autoSlideIdx) {
+        el.classList.remove('is-exiting');
+        void el.offsetWidth;
+        el.classList.add('is-active');
+      } else {
+        el.classList.remove('is-active');
+        if (wasActive) {
+          el.classList.add('is-exiting');
+          clearTimeout(el._fadeOutTimer);
+          el._fadeOutTimer = setTimeout(function(){
+            if (!el.classList.contains('is-active')) {
+              el.classList.remove('is-exiting');
+            }
+          }, 900);
+        } else {
+          el.classList.remove('is-exiting');
+        }
+      }
+    });
+  }
+  var maxDots = 5;
+  var totalSlides = slides.length;
+  var startDot = 0;
+  var endDot = totalSlides;
+  if (totalSlides > maxDots) {
+    startDot = Math.max(0, Math.min(autoSlideIdx - Math.floor(maxDots / 2), totalSlides - maxDots));
+    endDot = startDot + maxDots;
+  }
+  var dotsHtml = '';
+  for (var i = startDot; i < endDot; i++) {
+    dotsHtml += '<button type="button" class="auto-dot' + (i === autoSlideIdx ? ' active' : '') + '" data-slide-dot="' + i + '" aria-label="สไลด์ที่ ' + (i + 1) + '"></button>';
+  }
+  dotsEl.innerHTML = dotsHtml;
+}
+
+function goAutoSlide(nextIdx){
+  var slides = getAutoSlides();
+  if (!slides.length) return;
+  autoSlideIdx = ((nextIdx % slides.length) + slides.length) % slides.length;
+  renderAutoSlider(false);
+}
+
+function restartAutoTimer(){
+  clearInterval(autoTimer);
+  var btn = $('btnToggleAuto');
+  if (btn) {
+    btn.textContent = autoPlaying
+      ? (STATE.lang === 'en' ? '⏸ Pause' : '⏸ หยุดชั่วคราว')
+      : (STATE.lang === 'en' ? '▶ Play' : '▶ เล่นต่อ');
+  }
+  if (!autoPlaying) return;
+  autoTimer = setInterval(function(){ goAutoSlide(autoSlideIdx + 1); }, 3600);
+}
+
+if ($('btnPrevAuto')) $('btnPrevAuto').addEventListener('click', function(){ goAutoSlide(autoSlideIdx - 1); restartAutoTimer(); });
+if ($('btnNextAuto')) $('btnNextAuto').addEventListener('click', function(){ goAutoSlide(autoSlideIdx + 1); restartAutoTimer(); });
+if ($('btnToggleAuto')) $('btnToggleAuto').addEventListener('click', function(){ autoPlaying = !autoPlaying; restartAutoTimer(); });
+if ($('autoDots')) $('autoDots').addEventListener('click', function(e){
+  var dot = e.target.closest('[data-slide-dot]');
+  if (!dot) return;
+  goAutoSlide(+dot.dataset.slideDot);
+  restartAutoTimer();
+});
+
+// === 3D Flip Business Card ===
+var cardAngle = 0;
+var cardDragging = false;
+var cardDragStartX = 0;
+var cardDragStartAngle = 0;
+var cardMoved = false;
+
+function setCardFlipAngle(deg, immediate){
+  cardAngle = Math.max(0, Math.min(180, Number(deg) || 0));
+  var el = document.getElementById('card3d');
+  var lbEl = document.getElementById('card3dLightbox');
+  var range = $('time');
+  var out = $('tl');
+  var lbRange = $('cardLightboxRange');
+  var lbOut = $('cardLightboxOut');
+  var transformVal = 'rotateY(' + cardAngle.toFixed(1) + 'deg)';
+  if (el) {
+    el.classList.toggle('dragging', !!immediate);
+    el.style.transform = transformVal;
+  }
+  if (lbEl) {
+    lbEl.classList.toggle('dragging', !!immediate);
+    lbEl.style.transform = transformVal;
+  }
+  var pct = Math.round((cardAngle / 180) * 100);
+  var sideLabel = cardAngle >= 90
+    ? (STATE.lang === 'en' ? 'Back' : 'ด้านหลัง')
+    : (STATE.lang === 'en' ? 'Front' : 'ด้านหน้า');
+  if (range) range.value = String(pct);
+  if (out) out.textContent = sideLabel + ' · ' + pct + '%';
+  if (lbRange) lbRange.value = String(pct);
+  if (lbOut) lbOut.textContent = sideLabel + ' · ' + pct + '%';
+}
+
+function renderBusinessCard(){
+  var dockStage = $('dockStage');
+  var lbStage = $('cardLightboxStage');
+  if (!dockStage) return;
+  var brand = STATE.lang === 'en' ? (STATE.site.brandEn || 'Inthat · Villa Photographer') : (STATE.site.brandTh || 'อินทัช · ช่างภาพวิลล่า');
+  var frontContent = STATE.site.heroCardImg
+    ? '<img src="' + escAttr(normalizeImageUrl(STATE.site.heroCardImg)) + '" alt="' + escAttr(brand) + '" referrerpolicy="no-referrer" data-orig-src="' + escAttr(STATE.site.heroCardImg) + '" onerror="window.handleImgFallback(this)">'
+      + '<span class="img-fallback-svg" style="display:none;width:100%;height:100%"><div class="card-default-art"><span class="card-badge-pill">VILLA SET PORTFOLIO</span><div><div class="card-art-title">' + escAttr(brand) + '</div><div class="card-art-sub">Architectural · Pool Villa · Aerial</div></div><div class="card-art-foot"><span>' + escAttr(STATE.site.email || '') + '</span><span>DRAG OR CLICK</span></div></div></span>'
+    : '<div class="card-default-art"><span class="card-badge-pill">VILLA SET PORTFOLIO</span><div><div class="card-art-title">' + escAttr(brand) + '</div><div class="card-art-sub">Architectural · Pool Villa · Aerial</div></div><div class="card-art-foot"><span>' + escAttr(STATE.site.email || '') + '</span><span>DRAG OR CLICK</span></div></div>';
+  var backContent = STATE.site.heroCardBackImg
+    ? '<img src="' + escAttr(normalizeImageUrl(STATE.site.heroCardBackImg)) + '" alt="' + escAttr(brand) + ' Back" referrerpolicy="no-referrer" data-orig-src="' + escAttr(STATE.site.heroCardBackImg) + '" onerror="window.handleImgFallback(this)">'
+      + '<span class="img-fallback-svg" style="display:none;width:100%;height:100%"><div class="card-default-art back-art"><span class="card-badge-pill">BOOKING &amp; INQUIRY</span><div><div class="card-art-title">Daylight · Twilight · Interior</div><div class="card-art-sub">Phuket · Phang Nga · Krabi &amp; Travel</div></div><div class="card-art-foot"><span>+66 80 519 5750</span><span>FRONT / BACK</span></div></div></span>'
+    : '<div class="card-default-art back-art"><span class="card-badge-pill">BOOKING &amp; INQUIRY</span><div><div class="card-art-title">Daylight · Twilight · Interior</div><div class="card-art-sub">Phuket · Phang Nga · Krabi &amp; Travel</div></div><div class="card-art-foot"><span>+66 80 519 5750</span><span>FRONT / BACK</span></div></div>';
+
+  var cardMarkup = function(idAttr){
+    return '<div class="card-flip-scene"><div class="card-3d" id="' + idAttr + '">'
+      + '<div class="card-face front">' + frontContent + '</div>'
+      + '<div class="card-face back">' + backContent + '</div>'
+      + '</div></div>';
+  };
+
+  dockStage.innerHTML = cardMarkup('card3d');
+  if (lbStage) lbStage.innerHTML = cardMarkup('card3dLightbox');
+  setCardFlipAngle(cardAngle, true);
+  if ($('btnClearShowcaseImg')) {
+    var hasCustom = !!(STATE.site.heroCardImg || STATE.site.heroCardBackImg);
+    $('btnClearShowcaseImg').style.display = hasCustom ? 'inline-flex' : 'none';
+  }
+}
+
+function openCardLightbox(){
+  var lb = $('cardLightbox');
+  if (!lb) return;
+  lb.classList.add('open');
+  setCardFlipAngle(cardAngle, true);
+}
+
+function closeCardLightbox(){
+  var lb = $('cardLightbox');
+  if (!lb) return;
+  lb.classList.remove('open');
+}
+
+(function bindCardInteractions(){
+  var stage = $('dockStage');
+  var lbStage = $('cardLightboxStage');
+  var range = $('time');
+  var lbRange = $('cardLightboxRange');
+
+  function bindRange(el){
+    if (!el) return;
+    el.addEventListener('input', function(){
+      setCardFlipAngle((Number(this.value) / 100) * 180, true);
+    });
+    el.addEventListener('change', function(){
+      var pct = Number(this.value);
+      setCardFlipAngle(pct >= 50 ? 180 : 0, false);
+    });
+  }
+  bindRange(range);
+  bindRange(lbRange);
+
+  function bindStageDrag(targetStage, isLightbox){
+    if (!targetStage) return;
+    targetStage.addEventListener('pointerdown', function(e){
+      cardDragging = true;
+      cardMoved = false;
+      cardDragStartX = e.clientX;
+      cardDragStartAngle = cardAngle;
+      var activeCardId = isLightbox ? 'card3dLightbox' : 'card3d';
+      var el = document.getElementById(activeCardId);
+      if (el) el.classList.add('dragging');
+    });
+    targetStage.addEventListener('pointerup', function(){
+      if (!cardDragging) return;
+      cardDragging = false;
+      if (!cardMoved) {
+        if (!isLightbox) {
+          openCardLightbox();
+        } else {
+          setCardFlipAngle(cardAngle >= 90 ? 0 : 180, false);
+        }
+      } else {
+        setCardFlipAngle(cardAngle >= 90 ? 180 : 0, false);
+      }
+    });
+  }
+
+  bindStageDrag(stage, false);
+  bindStageDrag(lbStage, true);
+
+  window.addEventListener('pointermove', function(e){
+    if (!cardDragging) return;
+    var dx = e.clientX - cardDragStartX;
+    if (Math.abs(dx) > 6) cardMoved = true;
+    var activeStage = ($('cardLightbox') && $('cardLightbox').classList.contains('open')) ? lbStage : stage;
+    var widthRef = activeStage ? Math.max(200, activeStage.clientWidth || 320) : 320;
+    var deltaDeg = (dx / widthRef) * 180;
+    setCardFlipAngle(cardDragStartAngle + deltaDeg, true);
+  });
+
+  window.addEventListener('pointerup', function(){
+    if (!cardDragging) return;
+    cardDragging = false;
+    setCardFlipAngle(cardAngle >= 90 ? 180 : 0, false);
+  });
+
+  if ($('cardLightboxClose')) $('cardLightboxClose').addEventListener('click', closeCardLightbox);
+  if ($('cardLightbox')) {
+    $('cardLightbox').addEventListener('click', function(e){
+      if (e.target === $('cardLightbox')) closeCardLightbox();
+    });
+  }
+  if ($('cardFlipFrontBtn')) $('cardFlipFrontBtn').addEventListener('click', function(){ setCardFlipAngle(0, false); });
+  if ($('cardFlipBackBtn')) $('cardFlipBackBtn').addEventListener('click', function(){ setCardFlipAngle(180, false); });
+})();
+
+// === Filter & Villa Sets Grid ===
+var filtersEl = $('filters');
+var gridEl = $('grid');
+
+function renderFilters(){
+  if (!filtersEl) return;
+  var d = I18N[STATE.lang] || I18N.th;
+  var cats = ['ทั้งหมด', 'กลางวัน', 'พลบค่ำ', 'ภายใน'];
+  filtersEl.innerHTML = cats.map(function(c){
+    var pressed = c === activeCat;
+    var label = (d.cats && d.cats[c]) || c;
+    return '<button type="button" data-cat="' + escAttr(c) + '" aria-pressed="' + String(pressed) + '">' + escAttr(label) + '</button>';
+  }).join('');
+}
+
+if (filtersEl) {
+  filtersEl.addEventListener('click', function(e){
+    var btn = e.target.closest('button[data-cat]');
+    if (!btn) return;
+    activeCat = btn.dataset.cat;
+    renderFilters();
+    renderGrid();
+  });
+}
+
+function getListingIconHtml(type){
+  if (type === 'rent') {
+    return '<span class="listing-icon-badge" aria-hidden="true">R</span>';
+  }
+  if (type === 'both') {
+    return '<span class="listing-icon-badge" aria-hidden="true">$</span><span class="listing-icon-badge" aria-hidden="true">R</span>';
+  }
+  return '<span class="listing-icon-badge" aria-hidden="true">$</span>';
+}
+
+function renderGrid(){
+  if (!gridEl) return;
+  var d = I18N[STATE.lang] || I18N.th;
+  var list = STATE.sets.map(function(s, idx){ return { set: s, idx: idx }; })
+    .filter(function(entry){ return activeCat === 'ทั้งหมด' || entry.set.c === activeCat; });
+
+  gridEl.innerHTML = list.map(function(entry){
+    var s = entry.set;
+    var idx = entry.idx;
+    var items = Array.isArray(s.items) && s.items.length ? s.items : [{ kind:'svg', t:.5, f:0 }];
+    var cov = items[s.coverIdx || 0] || items[0];
+    var title = getSetTitle(s);
+    var catLabel = (d.cats && d.cats[s.c]) || s.c;
+    var showListing = s.listingEnabled !== false && s.listingEnabled !== 0 && s.listingEnabled !== '0' && !!s.listingType;
+    var listingText = showListing ? ((d.listingLabels && d.listingLabels[s.listingType]) || s.listingType) : '';
+    var ribbonClass = s.listingType === 'rent' ? 'is-rent' : (s.listingType === 'both' ? 'is-both' : 'is-sale');
+    return '<div class="tile-wrap">'
+      + '<button type="button" class="tile" data-open-set="' + idx + '">'
+      + '<div class="img">' + renderItemThumb(cov, title)
+      + (listingText ? '<span class="listing-ribbon ' + ribbonClass + '">' + getListingIconHtml(s.listingType) + '<span>' + escAttr(listingText) + '</span></span>' : '')
+      + '<span class="set-count-badge">' + items.length + ' ' + escAttr(d.photoCountUnit) + '</span>'
+      + '</div>'
+      + '<div class="tile-body">'
+      + '<div class="tile-top-meta">' + escAttr(s.loc || '') + (s.loc && catLabel ? ' · ' : '') + escAttr(catLabel || '') + '</div>'
+      + '<strong>' + escAttr(title) + '</strong>'
+      + '<div class="tile-bottom"><span class="meta">' + escAttr(getSetSub(s)) + '</span><span class="tile-cta">' + escAttr(d.viewSetCta) + '</span></div>'
+      + '</div></button>'
+      + '<div class="tile-admin-tools">'
+      + '<button type="button" data-edit-set="' + idx + '">✎ แก้ไขเซ็ต</button>'
+      + '<button type="button" class="del" data-del-set="' + idx + '">✕ ลบเซ็ต</button>'
+      + '</div></div>';
+  }).join('');
+}
+
+if (gridEl) {
+  gridEl.addEventListener('click', function(e){
+    var editBtn = e.target.closest('[data-edit-set]');
+    if (editBtn) { openSetModal(+editBtn.dataset.editSet); return; }
+    var delBtn = e.target.closest('[data-del-set]');
+    if (delBtn) {
+      var dIdx = +delBtn.dataset.delSet;
+      if (STATE.sets.length <= 1) { showToast('ต้องมีเซ็ตวิลล่าอย่างน้อย 1 เซ็ต'); return; }
+      STATE.sets.splice(dIdx, 1);
+      saveState();
+      renderGrid();
+      renderAutoSlider(true);
+      showToast('ลบเซ็ตวิลล่าแล้ว');
+      return;
+    }
+    var cardBtn = e.target.closest('[data-open-set]');
+    if (cardBtn) { openSetViewer(+cardBtn.dataset.openSet, 0); }
+  });
+}
+
+// === Set Slideshow Lightbox Dialog ===
+var dlg = $('setViewerDlg');
+var vStage = $('vStage');
+var vThumbs = $('vThumbs');
+var vCounter = $('vCounter');
+var currentSetIdx = 0;
+var currentItemIdx = 0;
+
+function renderSetSlide(){
+  var s = STATE.sets[currentSetIdx];
+  if (!s || !Array.isArray(s.items) || !s.items.length) return;
+  currentItemIdx = ((currentItemIdx % s.items.length) + s.items.length) % s.items.length;
+  var it = s.items[currentItemIdx];
+  var label = getItemLabel(it, currentItemIdx, s.items.length);
+  if ($('vSetTitle')) $('vSetTitle').textContent = getSetTitle(s);
+  if ($('vSetSub')) $('vSetSub').textContent = s.loc ? ('— ' + s.loc) : '';
+  if ($('vSetHint')) $('vSetHint').textContent = STATE.lang === 'en'
+    ? 'Use ‹ › or Left/Right arrow keys to browse this set'
+    : 'ใช้ปุ่ม ‹ › หรือลูกศรซ้าย-ขวาเพื่อเลื่อนดูภาพในเซ็ตนี้';
+  vStage.innerHTML = renderItemFull(it, label);
+  if (vCounter) vCounter.textContent = (currentItemIdx + 1) + ' / ' + s.items.length;
+  if ($('vItemTitle')) $('vItemTitle').textContent = label;
+  if ($('vItemNote')) $('vItemNote').textContent = getSetSub(s);
+  if ($('vEditSetTitle')) $('vEditSetTitle').value = STATE.lang === 'en' ? (s.titleEn || '') : (s.titleTh || '');
+  if ($('vEditSetLoc')) $('vEditSetLoc').value = s.loc || '';
+  if ($('vEditItemLabel')) $('vEditItemLabel').value = STATE.lang === 'en' ? (it.labelEn || '') : (it.labelTh || '');
+  if ($('vEditSetSub')) $('vEditSetSub').value = STATE.lang === 'en' ? (s.subEn || '') : (s.subTh || '');
+  vThumbs.innerHTML = s.items.map(function(subIt, idx){
+    var active = idx === currentItemIdx;
+    return '<button type="button" class="thumb-btn' + (active ? ' active' : '') + '" data-thumb-idx="' + idx + '" aria-label="รูปที่ ' + (idx + 1) + '">'
+      + renderItemThumb(subIt, '') + '</button>';
+  }).join('');
+  var activeThumb = vThumbs.querySelector('.thumb-btn.active');
+  if (activeThumb) activeThumb.scrollIntoView({ behavior:'smooth', block:'nearest', inline:'center' });
+}
+
+function bindViewerInlineEdits(){
+  var isEn = STATE.lang === 'en';
+  if ($('vEditSetTitle')) {
+    $('vEditSetTitle').oninput = function(){
+      var s = STATE.sets[currentSetIdx]; if (!s) return;
+      if (isEn) s.titleEn = this.value; else s.titleTh = this.value;
+      if ($('vSetTitle')) $('vSetTitle').textContent = getSetTitle(s);
+      saveState(); renderGrid();
+    };
+  }
+  if ($('vEditSetLoc')) {
+    $('vEditSetLoc').oninput = function(){
+      var s = STATE.sets[currentSetIdx]; if (!s) return;
+      s.loc = this.value;
+      if ($('vSetSub')) $('vSetSub').textContent = s.loc ? ('— ' + s.loc) : '';
+      saveState(); renderGrid();
+    };
+  }
+  if ($('vEditItemLabel')) {
+    $('vEditItemLabel').oninput = function(){
+      var s = STATE.sets[currentSetIdx]; if (!s || !s.items[currentItemIdx]) return;
+      var it = s.items[currentItemIdx];
+      if (isEn) it.labelEn = this.value; else it.labelTh = this.value;
+      if ($('vItemTitle')) $('vItemTitle').textContent = getItemLabel(it, currentItemIdx, s.items.length);
+      saveState(); renderAutoSlider();
+    };
+  }
+  if ($('vEditSetSub')) {
+    $('vEditSetSub').oninput = function(){
+      var s = STATE.sets[currentSetIdx]; if (!s) return;
+      if (isEn) s.subEn = this.value; else s.subTh = this.value;
+      if ($('vItemNote')) $('vItemNote').textContent = getSetSub(s);
+      saveState(); renderGrid();
+    };
+  }
+}
+bindViewerInlineEdits();
+
+function openSetViewer(setIdx, itemIdx){
+  if (!STATE.sets[setIdx]) return;
+  currentSetIdx = setIdx;
+  currentItemIdx = itemIdx || 0;
+  bindViewerInlineEdits();
+  renderSetSlide();
+  if (dlg && typeof dlg.showModal === 'function') dlg.showModal();
+  else if (dlg) dlg.setAttribute('open', '');
+}
+
+if ($('vPrev')) $('vPrev').addEventListener('click', function(){ currentItemIdx--; renderSetSlide(); });
+if ($('vNext')) $('vNext').addEventListener('click', function(){ currentItemIdx++; renderSetSlide(); });
+if ($('vOwnerDownload')) $('vOwnerDownload').addEventListener('click', function(){
+  if (!ownerUnlocked) {
+    showToast('เฉพาะเจ้าของเว็บที่เข้าสู่ระบบหลังบ้านเท่านั้นที่ดาวน์โหลดภาพได้');
+    return;
+  }
+  var s = STATE.sets[currentSetIdx];
+  var it = s && s.items && s.items[currentItemIdx];
+  if (!it) return;
+  try {
+    var safeName = ((s.id || 'villa') + '-' + (currentItemIdx + 1)).replace(/[^a-zA-Z0-9ก-๙_-]+/g, '-');
+    if (it.kind === 'image' && it.src) {
+      var a = document.createElement('a');
+      a.href = normalizeImageUrl(it.src);
+      a.download = safeName + '.jpg';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      showToast('กำลังดาวน์โหลดรูปภาพต้นฉบับ');
+      return;
+    }
+    var svgMarkup = it.kind === 'svg'
+      ? villaSvg(it.t != null ? it.t : 0.5, it.f || 0)
+      : '';
+    if (svgMarkup) {
+      var blob = new Blob([svgMarkup], { type: 'image/svg+xml;charset=utf-8' });
+      var url = URL.createObjectURL(blob);
+      var link = document.createElement('a');
+      link.href = url;
+      link.download = safeName + '.svg';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      setTimeout(function(){ URL.revokeObjectURL(url); }, 1000);
+      showToast('ดาวน์โหลดไฟล์ภาพแล้ว');
+    }
+  } catch(e){
+    showToast('ไม่สามารถดาวน์โหลดไฟล์ได้ในขณะนี้');
+  }
+});
+if ($('vClose')) $('vClose').addEventListener('click', function(){
+  if (dlg && typeof dlg.close === 'function') dlg.close();
+  else if (dlg) dlg.removeAttribute('open');
+});
+if (vThumbs) vThumbs.addEventListener('click', function(e){
+  var b = e.target.closest('[data-thumb-idx]');
+  if (!b) return;
+  currentItemIdx = +b.dataset.thumbIdx;
+  renderSetSlide();
+});
+
+document.addEventListener('keydown', function(e){
+  if ($('cardLightbox') && $('cardLightbox').classList.contains('open')) {
+    if (e.key === 'Escape') closeCardLightbox();
+    if (e.key === 'ArrowLeft') setCardFlipAngle(0, false);
+    if (e.key === 'ArrowRight') setCardFlipAngle(180, false);
+    return;
+  }
+  if ($('zoomOverlay') && $('zoomOverlay').classList.contains('open')) {
+    if (e.key === 'Escape') closeZoomOverlay();
+    return;
+  }
+  if (!dlg || !dlg.open) return;
+  if (document.activeElement && ['INPUT','TEXTAREA','SELECT'].indexOf(document.activeElement.tagName) !== -1) return;
+  if (e.key === 'ArrowLeft') { currentItemIdx--; renderSetSlide(); }
+  if (e.key === 'ArrowRight') { currentItemIdx++; renderSetSlide(); }
+});
+
+// === Mobile Pinch-to-Zoom & Fullscreen Image Expand ===
+var zScale = 1, zTx = 0, zTy = 0;
+var zPointers = {};
+var zStartDist = 0, zStartScale = 1;
+var zPanStartX = 0, zPanStartY = 0, zOrigTx = 0, zOrigTy = 0;
+var zLastTap = 0;
+
+function applyZoomTransform(){
+  var target = $('zoomTarget');
+  if (!target) return;
+  if (zScale <= 1) { zScale = 1; zTx = 0; zTy = 0; }
+  target.style.transform = 'translate(' + zTx.toFixed(1) + 'px, ' + zTy.toFixed(1) + 'px) scale(' + zScale.toFixed(3) + ')';
+  if ($('zoomResetBtn')) $('zoomResetBtn').textContent = Math.round(zScale * 100) + '%';
+}
+
+function openZoomOverlay(){
+  var s = STATE.sets[currentSetIdx];
+  if (!s || !s.items || !s.items[currentItemIdx]) return;
+  var it = s.items[currentItemIdx];
+  if (it.kind !== 'image' && it.kind !== 'svg') return;
+  var label = getItemLabel(it, currentItemIdx, s.items.length);
+  if ($('zoomCaption')) $('zoomCaption').textContent = label;
+  if ($('zoomTarget')) $('zoomTarget').innerHTML = renderItemFull(it, label);
+  if ($('zoomHint')) $('zoomHint').textContent = STATE.lang === 'en'
+    ? 'Pinch to zoom · Double-tap to toggle · Drag to pan'
+    : 'จีบนิ้วเพื่อซูม · แตะ 2 ครั้งเพื่อขยาย · ลากเพื่อเลื่อนดู';
+  zScale = 1.35; zTx = 0; zTy = 0; zPointers = {};
+  applyZoomTransform();
+  var ov = $('zoomOverlay');
+  if (!ov) return;
+  if (dlg && dlg.open && ov.parentElement !== dlg) dlg.appendChild(ov);
+  ov.classList.add('open');
+}
+
+function closeZoomOverlay(){
+  var ov = $('zoomOverlay');
+  if (!ov) return;
+  ov.classList.remove('open');
+  zPointers = {};
+  if (ov.parentElement !== document.body) document.body.appendChild(ov);
+}
+
+if (vStage) {
+  vStage.addEventListener('click', function(e){
+    if (e.target.closest('button, video, iframe')) return;
+    var s = STATE.sets[currentSetIdx];
+    var it = s && s.items && s.items[currentItemIdx];
+    if (it && (it.kind === 'image' || it.kind === 'svg')) openZoomOverlay();
+  });
+}
+if ($('vStage') && $('vStage').parentElement) {
+  $('vStage').parentElement.addEventListener('click', function(e){
+    if (e.target.closest('button, video, iframe')) return;
+    var s = STATE.sets[currentSetIdx];
+    var it = s && s.items && s.items[currentItemIdx];
+    if (it && (it.kind === 'image' || it.kind === 'svg')) openZoomOverlay();
+  });
+}
+if ($('zoomCloseBtn')) $('zoomCloseBtn').addEventListener('click', closeZoomOverlay);
+if ($('zoomInBtn')) $('zoomInBtn').addEventListener('click', function(){
+  zScale = Math.min(5, zScale + 0.6);
+  applyZoomTransform();
+});
+if ($('zoomOutBtn')) $('zoomOutBtn').addEventListener('click', function(){
+  zScale = Math.max(1, zScale - 0.6);
+  applyZoomTransform();
+});
+if ($('zoomResetBtn')) $('zoomResetBtn').addEventListener('click', function(){
+  zScale = 1; zTx = 0; zTy = 0;
+  applyZoomTransform();
+});
+
+var zoomCanvas = $('zoomCanvas');
+if (zoomCanvas) {
+  zoomCanvas.addEventListener('pointerdown', function(e){
+    zoomCanvas.setPointerCapture(e.pointerId);
+    zPointers[e.pointerId] = { x: e.clientX, y: e.clientY };
+    var ids = Object.keys(zPointers);
+    if (ids.length === 1) {
+      var now = Date.now();
+      if (now - zLastTap < 280) {
+        zScale = zScale > 1.2 ? 1 : 2.5;
+        if (zScale === 1) { zTx = 0; zTy = 0; }
+        applyZoomTransform();
+        zLastTap = 0;
+        return;
+      }
+      zLastTap = now;
+      zPanStartX = e.clientX;
+      zPanStartY = e.clientY;
+      zOrigTx = zTx;
+      zOrigTy = zTy;
+    } else if (ids.length === 2) {
+      var p1 = zPointers[ids[0]], p2 = zPointers[ids[1]];
+      zStartDist = Math.hypot(p2.x - p1.x, p2.y - p1.y) || 1;
+      zStartScale = zScale;
+    }
+  });
+  zoomCanvas.addEventListener('pointermove', function(e){
+    if (!zPointers[e.pointerId]) return;
+    zPointers[e.pointerId] = { x: e.clientX, y: e.clientY };
+    var ids = Object.keys(zPointers);
+    if (ids.length === 2) {
+      var p1 = zPointers[ids[0]], p2 = zPointers[ids[1]];
+      var dist = Math.hypot(p2.x - p1.x, p2.y - p1.y);
+      zScale = Math.max(1, Math.min(5, zStartScale * (dist / zStartDist)));
+      applyZoomTransform();
+    } else if (ids.length === 1 && zScale > 1) {
+      zTx = zOrigTx + (e.clientX - zPanStartX);
+      zTy = zOrigTy + (e.clientY - zPanStartY);
+      applyZoomTransform();
+    }
+  });
+  function clearZoomPointer(e){ delete zPointers[e.pointerId]; }
+  zoomCanvas.addEventListener('pointerup', clearZoomPointer);
+  zoomCanvas.addEventListener('pointercancel', clearZoomPointer);
+  zoomCanvas.addEventListener('wheel', function(e){
+    e.preventDefault();
+    zScale = Math.max(1, Math.min(5, zScale + (e.deltaY < 0 ? 0.35 : -0.35)));
+    applyZoomTransform();
+  }, { passive: false });
+}
+
+function applyLanguage(lang){
+  STATE.lang = (lang === 'en') ? 'en' : 'th';
+  saveState();
+  bindViewerInlineEdits();
+  var d = I18N[STATE.lang] || I18N.th;
+  var brandText = STATE.lang === 'en' ? (STATE.site.brandEn || 'Inthat · Villa Photographer') : (STATE.site.brandTh || 'อินทัช · ช่างภาพวิลล่า');
+  if ($('brandName')) $('brandName').textContent = brandText;
+  document.title = brandText + ' | ' + d.pageTitle;
+  if ($('navWork')) $('navWork').textContent = d.navWork;
+  if ($('navService')) $('navService').textContent = d.navService;
+  if ($('navContact')) $('navContact').textContent = d.navContact;
+  if ($('heroTitle')) $('heroTitle').textContent = STATE.lang === 'en' ? (STATE.site.heroEn || '') : (STATE.site.heroTh || '');
+  if ($('heroSub')) $('heroSub').textContent = STATE.lang === 'en' ? (STATE.site.subEn || '') : (STATE.site.subTh || '');
+  if ($('heroCtaWork')) $('heroCtaWork').textContent = d.heroCtaWork;
+  if ($('heroCtaContact')) $('heroCtaContact').textContent = d.heroCtaContact;
+  if ($('workTitle')) $('workTitle').textContent = d.workTitle;
+  if ($('workLead')) $('workLead').textContent = d.workLead;
+  if ($('svcTitle')) $('svcTitle').textContent = d.svcTitle;
+  if ($('svcLead')) $('svcLead').textContent = d.svcLead;
+  if ($('svc1T')) $('svc1T').textContent = d.svc1T; if ($('svc1D')) $('svc1D').textContent = d.svc1D;
+  if ($('svc2T')) $('svc2T').textContent = d.svc2T; if ($('svc2D')) $('svc2D').textContent = d.svc2D;
+  if ($('svc3T')) $('svc3T').textContent = d.svc3T; if ($('svc3D')) $('svc3D').textContent = d.svc3D;
+  if ($('ctTitle')) $('ctTitle').textContent = d.ctTitle;
+  if ($('ctLead')) $('ctLead').textContent = d.ctLead;
+  if ($('bookingSteps')) $('bookingSteps').innerHTML = d.bookingStepsHtml;
+  if ($('serviceAreaRow')) $('serviceAreaRow').innerHTML = d.serviceAreaHtml;
+  if ($('btnCopyBrief')) $('btnCopyBrief').textContent = d.copyBriefBtn;
+  if ($('priceNoteBox')) $('priceNoteBox').innerHTML = d.priceNote;
+  if ($('btnEmail')) {
+    $('btnEmail').textContent = d.btnEmail;
+    $('btnEmail').href = 'mailto:' + (STATE.site.email || 'hello@example.com');
+  }
+  if ($('btnLine')) {
+    $('btnLine').textContent = d.btnLine;
+    $('btnLine').href = STATE.site.line || 'https://line.me/ti/p/your-line-id';
+  }
+  if ($('vClose')) $('vClose').textContent = d.closeBtn;
+  if ($('fabLabel')) $('fabLabel').textContent = ownerUnlocked ? d.fabUnlocked : d.fabLocked;
+  if ($('footerText')) $('footerText').textContent = '© 2026 ' + brandText + ' · ' + d.footerSuffix;
+  document.querySelectorAll('.lang-switch button').forEach(function(b){
+    b.setAttribute('aria-pressed', String(b.dataset.lang === STATE.lang));
+  });
+  renderBusinessCard();
+  renderFilters();
+  renderGrid();
+  renderAutoSlider();
+  attachMediaShields();
+}
+
+document.querySelectorAll('.lang-switch button').forEach(function(b){
+  b.addEventListener('click', function(){ applyLanguage(b.dataset.lang); });
+});
+
+if ($('btnCopyBrief')) {
+  $('btnCopyBrief').addEventListener('click', function(){
+    var d = I18N[STATE.lang] || I18N.th;
+    var text = d.copyBriefText;
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed';
+    ta.style.left = '-9999px';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); } catch(e){}
+    document.body.removeChild(ta);
+    showToast(d.copyBriefToast);
+  });
+}
+
+document.querySelectorAll('.svc-pick').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var pkg = btn.dataset.pkg || '';
+    var line1 = STATE.lang === 'en' ? 'Hello, I am interested in: ' : 'สวัสดีครับ สนใจแพ็กเกจ: ';
+    var ta = document.createElement('textarea');
+    ta.value = line1 + pkg;
+    ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed';
+    ta.style.left = '-9999px';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); } catch(e){}
+    document.body.removeChild(ta);
+    showToast((STATE.lang === 'en' ? 'Copied package: ' : 'คัดลอกชื่อแพ็กเกจแล้ว: ') + pkg);
+    var contactEl = $('contact');
+    if (contactEl) contactEl.scrollIntoView({ behavior:'smooth' });
+  });
+});
+
+// === Owner Mode (PIN 2538) & Card Image Upload ===
+var pinDlg = $('pinDlg');
+var pendingPinCallback = null;
+
+function setOwnerEditing(active){
+  ownerUnlocked = !!active;
+  document.body.classList.toggle('editing', ownerUnlocked);
+  $('adminFab').setAttribute('aria-pressed', String(ownerUnlocked));
+  var d = I18N[STATE.lang] || I18N.th;
+  $('fabLabel').textContent = ownerUnlocked ? d.fabUnlocked : d.fabLocked;
+  renderBusinessCard();
+}
+
+function openPinModal(cb){
+  pendingPinCallback = cb || null;
+  $('pinInput').value = '';
+  if (typeof pinDlg.showModal === 'function') pinDlg.showModal();
+  else pinDlg.setAttribute('open', '');
+  setTimeout(function(){ $('pinInput').focus(); }, 50);
+}
+
+$('adminFab').addEventListener('click', function(){
+  if (ownerUnlocked) {
+    setOwnerEditing(false);
+    showToast('ปิดโหมดจัดการหลังบ้านแล้ว');
+  } else {
+    openPinModal(function(){
+      setOwnerEditing(true);
+      showToast('เข้าสู่โหมดจัดการหลังบ้านแล้ว');
+    });
+  }
+});
+
+$('pinCancel').addEventListener('click', function(){
+  pendingPinCallback = null;
+  if (typeof pinDlg.close === 'function') pinDlg.close();
+  else pinDlg.removeAttribute('open');
+});
+
+$('pinForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var pin = ($('pinInput').value || '').trim();
+  if (pin !== '2538') {
+    showToast('รหัส PIN ไม่ถูกต้อง');
+    return;
+  }
+  if (typeof pinDlg.close === 'function') pinDlg.close();
+  else pinDlg.removeAttribute('open');
+  var cb = pendingPinCallback;
+  pendingPinCallback = null;
+  if (cb) cb();
+});
+
+if ($('showcaseImgInput')) {
+  $('showcaseImgInput').addEventListener('change', function(){
+    var f = this.files && this.files[0];
+    if (!f) return;
+    compressPhoto(f, 1280, function(dataUrl){
+      STATE.site.heroCardImg = dataUrl;
+      saveState();
+      renderBusinessCard();
+      showToast('อัปเดตรูปนามบัตรด้านหน้าเรียบร้อยแล้ว');
+    });
+    this.value = '';
+  });
+}
+
+if ($('showcaseBackInput')) {
+  $('showcaseBackInput').addEventListener('change', function(){
+    var f = this.files && this.files[0];
+    if (!f) return;
+    compressPhoto(f, 1280, function(dataUrl){
+      STATE.site.heroCardBackImg = dataUrl;
+      saveState();
+      renderBusinessCard();
+      showToast('อัปเดตรูปนามบัตรด้านหลังเรียบร้อยแล้ว');
+    });
+    this.value = '';
+  });
+}
+
+if ($('btnClearShowcaseImg')) {
+  $('btnClearShowcaseImg').addEventListener('click', function(){
+    STATE.site.heroCardImg = '';
+    STATE.site.heroCardBackImg = '';
+    saveState();
+    renderBusinessCard();
+    showToast('ลบรูปนามบัตรที่อัปโหลดแล้ว');
+  });
+}
+
+if ($('btnSetCardUrl')) {
+  $('btnSetCardUrl').addEventListener('click', function(){
+    var isBack = cardAngle >= 90;
+    var sideText = isBack ? 'ด้านหลัง' : 'ด้านหน้า';
+    var curUrl = isBack ? (STATE.site.heroCardBackImg || '') : (STATE.site.heroCardImg || '');
+    var raw = window.prompt('วางลิงก์รูปภาพนามบัตร (' + sideText + ') จาก Google Drive หรือลิงก์รูปตรง (https://...):', curUrl);
+    if (raw === null) return;
+    var normalized = normalizeImageUrl(raw.trim());
+    if (isBack) {
+      STATE.site.heroCardBackImg = normalized;
+    } else {
+      STATE.site.heroCardImg = normalized;
+    }
+    saveState();
+    renderBusinessCard();
+    showToast(normalized ? ('อัปเดตลิงก์รูปนามบัตร' + sideText + 'แล้ว') : ('ล้างลิงก์รูปนามบัตร' + sideText + 'แล้ว'));
+  });
+}
+
+// === Add / Edit Villa Set Modal ===
+var setDlg = $('setDlg');
+var editingSetIdx = null;
+var draftSetItems = [];
+
+function renderDraftItems(){
+  $('setItemsCount').textContent = String(draftSetItems.length);
+  $('setItemsList').innerHTML = draftSetItems.map(function(it, idx){
+    return '<div class="set-item-row">'
+      + '<div class="set-item-thumb">' + renderItemThumb(it, '') + '</div>'
+      + '<div class="set-item-info"><input type="text" data-draft-label="' + idx + '" value="' + escAttr(it.labelTh || '') + '" placeholder="ชื่อมุม/ห้องในเซ็ตนี้"></div>'
+      + '<button type="button" class="adm-btn" data-draft-cover="' + idx + '">' + (idx === 0 ? '★ หน้าปก' : 'ตั้งเป็นปก') + '</button>'
+      + '<button type="button" class="adm-btn" style="border-color:#c94a4a;color:#c94a4a" data-draft-del="' + idx + '">ลบ</button>'
+      + '</div>';
+  }).join('');
+}
+
+$('setItemsList').addEventListener('input', function(e){
+  var inp = e.target.closest('[data-draft-label]');
+  if (inp) {
+    var i = +inp.dataset.draftLabel;
+    if (draftSetItems[i]) {
+      draftSetItems[i].labelTh = inp.value;
+      draftSetItems[i].labelEn = inp.value;
+      syncDraftSetToState(false);
+    }
+  }
+});
+
+$('setItemsList').addEventListener('click', function(e){
+  var delBtn = e.target.closest('[data-draft-del]');
+  if (delBtn) {
+    var idx = +delBtn.dataset.draftDel;
+    if (draftSetItems.length <= 1) { showToast('เซ็ตต้องมีอย่างน้อย 1 รายการ'); return; }
+    draftSetItems.splice(idx, 1);
+    renderDraftItems();
+    syncDraftSetToState(true);
+    return;
+  }
+  var covBtn = e.target.closest('[data-draft-cover]');
+  if (covBtn) {
+    var cIdx = +covBtn.dataset.draftCover;
+    var chosen = draftSetItems.splice(cIdx, 1)[0];
+    draftSetItems.unshift(chosen);
+    renderDraftItems();
+    syncDraftSetToState(true);
+  }
+});
+
+$('multiImgInput').addEventListener('change', function(){
+  var files = Array.prototype.slice.call(this.files || []);
+  if (!files.length) return;
+  var totalQueued = files.length;
+  var completedCount = 0;
+  files.forEach(function(file, n){
+    compressPhoto(file, 1400, function(dataUrl){
+      completedCount++;
+      var cleanName = file.name.replace(/\.[^.]+$/, '') || ('รูปที่ ' + (draftSetItems.length + n + 1));
+      draftSetItems.push({
+        kind: 'image',
+        labelTh: cleanName,
+        labelEn: cleanName,
+        src: dataUrl,
+        t: 0.5,
+        f: 0
+      });
+      renderDraftItems();
+      syncDraftSetToState(true);
+      if (completedCount === totalQueued) {
+        showToast('เพิ่มและบันทึกรูปภาพ ' + totalQueued + ' รูปเข้าหลังบ้านเรียบร้อยแล้ว');
+      }
+    });
+  });
+  this.value = '';
+});
+
+function buildSetObjectFromForm(itemsOverride){
+  var loc = ($('sLoc') ? $('sLoc').value : '').trim();
+  var cat = ($('sCat') ? $('sCat').value : '') || 'กลางวัน';
+  var titleTh = ($('sTitleTh') ? $('sTitleTh').value : '').trim() || ('เซ็ตวิลล่า ' + (STATE.sets.length + 1));
+  var titleEn = ($('sTitleEn') ? $('sTitleEn').value : '').trim() || titleTh;
+  var subTh = ($('sSubTh') ? $('sSubTh').value : '').trim() || (loc || cat);
+  var subEn = ($('sSubEn') ? $('sSubEn').value : '').trim() || (loc || cat);
+  var sourceItems = Array.isArray(itemsOverride) && itemsOverride.length ? itemsOverride : draftSetItems;
+  var hasRealMedia = sourceItems.some(function(it){
+    return it && ((it.kind === 'image' && !!it.src) || it.kind === 'video-url' || it.kind === 'video-file');
+  });
+  var cleanItems = sourceItems.filter(function(it){
+    if (!it) return false;
+    var isDefaultPlaceholderSvg = it.kind === 'svg'
+      && !it.src
+      && (it.labelTh === 'มุมหลักของวิลล่า' || it.labelEn === 'Main Villa View');
+    return !(hasRealMedia && isDefaultPlaceholderSvg);
+  });
+  if (!cleanItems.length) {
+    cleanItems = sourceItems.length ? clone(sourceItems) : [{ kind:'svg', labelTh:'มุมหลักของวิลล่า', labelEn:'Main Villa View', t:0.5, f:0, src:'' }];
+  }
+  var existingSet = (editingSetIdx !== null && STATE.sets[editingSetIdx]) ? STATE.sets[editingSetIdx] : null;
+  return {
+    id: (existingSet && existingSet.id) ? existingSet.id : ('villa-' + Date.now()),
+    c: cat,
+    loc: loc,
+    titleTh: titleTh,
+    titleEn: titleEn,
+    listingEnabled: $('sListingEnabled') ? ($('sListingEnabled').value === '1') : false,
+    listingType: $('sListingType') ? $('sListingType').value : 'sale',
+    subTh: subTh,
+    subEn: subEn,
+    coverIdx: 0,
+    items: clone(cleanItems)
+  };
+}
+
+function syncDraftSetToState(refreshViews){
+  var setObj = buildSetObjectFromForm(draftSetItems);
+  if (editingSetIdx !== null && STATE.sets[editingSetIdx]) {
+    STATE.sets[editingSetIdx] = setObj;
+  } else {
+    editingSetIdx = STATE.sets.length;
+    STATE.sets.push(setObj);
+  }
+  saveState();
+  if (refreshViews) {
+    renderGrid();
+    renderAutoSlider(true);
+    attachMediaShields();
+  }
+}
+
+function openSetModal(idx){
+  editingSetIdx = (typeof idx === 'number' && idx >= 0) ? idx : null;
+  if ($('imgUrlInlineBox')) $('imgUrlInlineBox').style.display = 'none';
+  if ($('imgUrlInlineInput')) $('imgUrlInlineInput').value = '';
+  if (editingSetIdx !== null && STATE.sets[editingSetIdx]) {
+    var s = STATE.sets[editingSetIdx];
+    $('setDlgTitle').textContent = 'แก้ไขเซ็ตวิลล่า';
+    $('sLoc').value = s.loc || '';
+    $('sCat').value = s.c || 'กลางวัน';
+    $('sTitleTh').value = s.titleTh || '';
+    $('sTitleEn').value = s.titleEn || '';
+    if ($('sListingEnabled')) $('sListingEnabled').value = (s.listingEnabled === false || s.listingEnabled === 0 || s.listingEnabled === '0') ? '0' : '1';
+    if ($('sListingType')) $('sListingType').value = s.listingType || 'sale';
+    $('sCode').value = String(parseInt(s.views, 10) || 0);
+    $('sSubTh').value = s.subTh || '';
+    $('sSubEn').value = s.subEn || '';
+    draftSetItems = Array.isArray(s.items) && s.items.length ? clone(s.items) : [{ kind:'svg', labelTh:'มุมหลักของวิลล่า', labelEn:'Main Villa View', t:0.5, f:0, src:'' }];
+  } else {
+    $('setDlgTitle').textContent = 'เพิ่มเซ็ตวิลล่าใหม่';
+    $('sLoc').value = '';
+    $('sCat').value = 'กลางวัน';
+    $('sTitleTh').value = '';
+    $('sTitleEn').value = '';
+    if ($('sListingEnabled')) $('sListingEnabled').value = '0';
+    if ($('sListingType')) $('sListingType').value = 'sale';
+    $('sCode').value = '0';
+    $('sSubTh').value = '';
+    $('sSubEn').value = '';
+    draftSetItems = [{ kind:'svg', labelTh:'มุมหลักของวิลล่า', labelEn:'Main Villa View', t:0.5, f:0, src:'' }];
+  }
+  renderDraftItems();
+  if (typeof setDlg.showModal === 'function') setDlg.showModal();
+  else setDlg.setAttribute('open', '');
+}
+
+if ($('btnNewSet')) {
+  $('btnNewSet').addEventListener('click', function(){ openSetModal(null); });
+}
+
+if ($('setCancel')) {
+  $('setCancel').addEventListener('click', function(){
+    if (typeof setDlg.close === 'function') setDlg.close();
+    else setDlg.removeAttribute('open');
+  });
+}
+
+if ($('btnAddImgUrlToSet')) {
+  $('btnAddImgUrlToSet').addEventListener('click', function(){
+    var box = $('imgUrlInlineBox');
+    var inp = $('imgUrlInlineInput');
+    if (box) {
+      box.style.display = (box.style.display === 'none' || !box.style.display) ? 'block' : 'none';
+      if (box.style.display === 'block' && inp) {
+        inp.value = '';
+        setTimeout(function(){ inp.focus(); }, 30);
+      }
+    }
+  });
+}
+
+if ($('btnConfirmImgUrlInline')) {
+  $('btnConfirmImgUrlInline').addEventListener('click', function(){
+    var inp = $('imgUrlInlineInput');
+    var raw = inp ? inp.value : '';
+    var lines = String(raw || '')
+      .split(/[\r\n,]+/)
+      .map(function(line){ return normalizeImageUrl(line); })
+      .filter(function(u){ return !!u; });
+    if (!lines.length) {
+      showToast('กรุณาวางลิงก์รูปภาพก่อน');
+      if (inp) inp.focus();
+      return;
+    }
+    var addedCount = 0;
+    lines.forEach(function(url){
+      var idxNum = draftSetItems.length + 1;
+      draftSetItems.push({
+        kind: 'image',
+        labelTh: 'ภาพวิลล่า #' + idxNum,
+        labelEn: 'Villa Photo #' + idxNum,
+        src: url,
+        t: 0.5,
+        f: 0
+      });
+      addedCount++;
+    });
+    renderDraftItems();
+    syncDraftSetToState(true);
+    if (inp) inp.value = '';
+    if ($('imgUrlInlineBox')) $('imgUrlInlineBox').style.display = 'none';
+    showToast('เพิ่มและบันทึกลิงก์รูปภาพ ' + addedCount + ' รูปเข้าหลังบ้านแล้ว');
+  });
+}
+
+if ($('imgUrlInlineInput')) {
+  $('imgUrlInlineInput').addEventListener('paste', function(){
+    var self = this;
+    setTimeout(function(){
+      var cleaned = String(self.value || '')
+        .split(/\r?\n/)
+        .map(function(line){ return line.replace(/[,;\s]+$/g, '').trim(); })
+        .filter(function(line){ return !!line; })
+        .join('\n');
+      if (cleaned) self.value = cleaned;
+    }, 0);
+  });
+  $('imgUrlInlineInput').addEventListener('keydown', function(e){
+    if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+      e.preventDefault();
+      if ($('btnConfirmImgUrlInline')) $('btnConfirmImgUrlInline').click();
+    }
+  });
+}
+
+if ($('btnCancelImgUrlInline')) {
+  $('btnCancelImgUrlInline').addEventListener('click', function(){
+    if ($('imgUrlInlineBox')) $('imgUrlInlineBox').style.display = 'none';
+  });
+}
+
+// Sub-media modal (Video / SVG)
+var subMediaDlg = $('subMediaDlg');
+
+function toggleSubMediaFields(){
+  var kind = $('subKind') ? $('subKind').value : 'video-url';
+  if ($('subUrlGrp')) $('subUrlGrp').style.display = (kind === 'video-url') ? 'flex' : 'none';
+  if ($('subFileGrp')) $('subFileGrp').style.display = (kind === 'video-file') ? 'flex' : 'none';
+  if ($('subSvgGrp')) $('subSvgGrp').style.display = (kind === 'svg') ? 'grid' : 'none';
+}
+
+if ($('subKind')) $('subKind').addEventListener('change', toggleSubMediaFields);
+
+if ($('btnAddVideoToSet')) {
+  $('btnAddVideoToSet').addEventListener('click', function(){
+    $('subMediaTitle').textContent = 'เพิ่มวิดีโอเข้าเซ็ตนี้';
+    $('subKind').value = 'video-url';
+    $('subLabelTh').value = '';
+    $('subLabelEn').value = '';
+    $('subUrl').value = '';
+    toggleSubMediaFields();
+    if (typeof subMediaDlg.showModal === 'function') subMediaDlg.showModal();
+    else subMediaDlg.setAttribute('open', '');
+  });
+}
+
+if ($('btnAddSvgToSet')) {
+  $('btnAddSvgToSet').addEventListener('click', function(){
+    $('subMediaTitle').textContent = 'เพิ่มภาพวาดจำลองเข้าเซ็ตนี้';
+    $('subKind').value = 'svg';
+    $('subLabelTh').value = '';
+    $('subLabelEn').value = '';
+    $('subLight').value = '0.5';
+    $('subFlip').value = '0';
+    toggleSubMediaFields();
+    if (typeof subMediaDlg.showModal === 'function') subMediaDlg.showModal();
+    else subMediaDlg.setAttribute('open', '');
+  });
+}
+
+if ($('subMediaCancel')) {
+  $('subMediaCancel').addEventListener('click', function(){
+    if (typeof subMediaDlg.close === 'function') subMediaDlg.close();
+    else subMediaDlg.removeAttribute('open');
+  });
+}
+
+if ($('subMediaForm')) {
+  $('subMediaForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var kind = $('subKind').value;
+    var lTh = ($('subLabelTh').value || '').trim() || ('รายการที่ ' + (draftSetItems.length + 1));
+    var lEn = ($('subLabelEn').value || '').trim() || lTh;
+
+    function finishAdd(itemObj){
+      draftSetItems.push(itemObj);
+      renderDraftItems();
+      syncDraftSetToState(true);
+      if (typeof subMediaDlg.close === 'function') subMediaDlg.close();
+      else subMediaDlg.removeAttribute('open');
+      showToast('เพิ่มและบันทึกสื่อเข้าหลังบ้านแล้ว');
+    }
+
+    if (kind === 'video-file') {
+      var vf = $('subFile').files && $('subFile').files[0];
+      if (!vf) { showToast('กรุณาเลือกไฟล์วิดีโอ'); return; }
+      var objUrl = URL.createObjectURL(vf);
+      finishAdd({ kind: 'video-file', labelTh: lTh, labelEn: lEn, src: objUrl });
+      return;
+    }
+
+    if (kind === 'svg') {
+      finishAdd({
+        kind: 'svg',
+        labelTh: lTh,
+        labelEn: lEn,
+        t: Math.max(0, Math.min(1, parseFloat($('subLight').value) || 0.5)),
+        f: parseInt($('subFlip').value, 10) || 0,
+        src: ''
+      });
+      return;
+    }
+
+    var vUrl = ($('subUrl').value || '').trim();
+    finishAdd({ kind: 'video-url', labelTh: lTh, labelEn: lEn, src: vUrl });
+  });
+}
+
+if ($('setForm')) {
+  $('setForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var setObj = buildSetObjectFromForm(draftSetItems);
+
+    if (editingSetIdx !== null && STATE.sets[editingSetIdx]) {
+      STATE.sets[editingSetIdx] = setObj;
+    } else {
+      STATE.sets.push(setObj);
+    }
+
+    saveState();
+    renderGrid();
+    renderAutoSlider(true);
+    attachMediaShields();
+    if (typeof setDlg.close === 'function') setDlg.close();
+    else setDlg.removeAttribute('open');
+    showToast('บันทึกเซ็ตวิลล่าเรียบร้อยแล้ว');
+  });
+}
+
+// === Edit Site Info Modal ===
+var siteDlg = $('siteDlg');
+
+if ($('btnEditSite')) {
+  $('btnEditSite').addEventListener('click', function(){
+    $('sBrandTh').value = STATE.site.brandTh || '';
+    $('sBrandEn').value = STATE.site.brandEn || '';
+    $('sHeroTh').value = STATE.site.heroTh || '';
+    $('sHeroEn').value = STATE.site.heroEn || '';
+    $('sSubTh').value = STATE.site.subTh || '';
+    $('sSubEn').value = STATE.site.subEn || '';
+    $('sEmail').value = STATE.site.email || '';
+    $('sLine').value = STATE.site.line || '';
+    if (typeof siteDlg.showModal === 'function') siteDlg.showModal();
+    else siteDlg.setAttribute('open', '');
+  });
+}
+
+if ($('siteCancel')) {
+  $('siteCancel').addEventListener('click', function(){
+    if (typeof siteDlg.close === 'function') siteDlg.close();
+    else siteDlg.removeAttribute('open');
+  });
+}
+
+if ($('siteForm')) {
+  $('siteForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    STATE.site.brandTh = ($('sBrandTh').value || '').trim();
+    STATE.site.brandEn = ($('sBrandEn').value || '').trim();
+    STATE.site.heroTh = ($('sHeroTh').value || '').trim();
+    STATE.site.heroEn = ($('sHeroEn').value || '').trim();
+    STATE.site.subTh = ($('sSubTh').value || '').trim();
+    STATE.site.subEn = ($('sSubEn').value || '').trim();
+    STATE.site.email = ($('sEmail').value || '').trim();
+    STATE.site.line = ($('sLine').value || '').trim();
+    saveState();
+    applyLanguage(STATE.lang);
+    if (typeof siteDlg.close === 'function') siteDlg.close();
+    else siteDlg.removeAttribute('open');
+    showToast('บันทึกข้อมูลเว็บไซต์แล้ว');
+  });
+}
+
+// === Export Updated HTML Code ===
+var codeExportDlg = $('codeExportDlg');
+
+function serializeStateForExport(){
+  return JSON.stringify({
+    lang: STATE.lang,
+    ownerPin: '2538',
+    watermarkText: 'InthatPhotographer',
+    site: STATE.site,
+    sets: STATE.sets.map(function(s){
+      return Object.assign({}, s, {
+        items: Array.isArray(s.items) ? s.items.map(function(it){
+          if (it && it.kind === 'video-file' && typeof it.src === 'string' && it.src.indexOf('blob:') === 0) {
+            return Object.assign({}, it, { kind: 'video-url', src: '' });
+          }
+          return Object.assign({}, it);
+        }) : []
+      });
+    })
+  }).replace(/<\/script>/gi, '<\\/script>');
+}
+
+function replaceInitialDataInSource(sourceHtml, safeSerialized){
+  var re = /(var INITIAL_DATA = )[\s\S]*?(?=\r?\nvar I18N = )/;
+  if (!re.test(sourceHtml)) return '';
+  return sourceHtml.replace(re, function(_, prefix){
+    return prefix + safeSerialized + ';';
+  });
+}
+
+function buildUpdatedHtmlSource(){
+  var wasEditing = document.body.classList.contains('editing');
+  if (wasEditing) document.body.classList.remove('editing');
+
+  var safeSerialized = serializeStateForExport();
+  var result = replaceInitialDataInSource(INITIAL_HTML_TEMPLATE, safeSerialized);
+
+  if (!result) {
+    var cloneDoc = document.documentElement.cloneNode(true);
+    cloneDoc.removeAttribute('data-theme');
+    var scripts = cloneDoc.getElementsByTagName('script');
+    for (var i = scripts.length - 1; i >= 0; i--) {
+      var txt = scripts[i].textContent || '';
+      if (txt.indexOf('var INITIAL_DATA = ') !== -1) {
+        scripts[i].textContent = txt.replace(/(var INITIAL_DATA = )[\s\S]*?(?=\r?\nvar I18N = )/, function(_, prefix){
+          return prefix + safeSerialized + ';';
+        });
+      }
+    }
+    var fallbackDomHtml = '<!DOCTYPE html>\n' + cloneDoc.outerHTML;
+    result = replaceInitialDataInSource(fallbackDomHtml, safeSerialized) || fallbackDomHtml;
+  }
+
+  if (wasEditing) document.body.classList.add('editing');
+  return result;
+}
+
+function triggerDownloadIndexHtml(htmlStr){
+  var blob = new Blob([htmlStr], { type: 'text/html;charset=utf-8' });
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement('a');
+  a.href = url;
+  a.download = 'index.html';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(function(){ URL.revokeObjectURL(url); }, 1000);
+}
+
+if ($('btnSaveAndDownloadIndex')) {
+  $('btnSaveAndDownloadIndex').addEventListener('click', function(){
+    saveState();
+    var updated = buildUpdatedHtmlSource();
+    triggerDownloadIndexHtml(updated);
+    showToast('บันทึกและดาวน์โหลด index.html เรียบร้อยแล้ว');
+  });
+}
+
+if ($('btnExportCode')) {
+  $('btnExportCode').addEventListener('click', function(){
+    saveState();
+    $('exportedCodeArea').value = buildUpdatedHtmlSource();
+    if (typeof codeExportDlg.showModal === 'function') codeExportDlg.showModal();
+    else codeExportDlg.setAttribute('open', '');
+  });
+}
+
+if ($('btnCopyExportCode')) {
+  $('btnCopyExportCode').addEventListener('click', function(){
+    var area = $('exportedCodeArea');
+    area.select();
+    try { document.execCommand('copy'); } catch(e){}
+    showToast('คัดลอกโค้ด HTML ทั้งหมดแล้ว');
+  });
+}
+
+if ($('btnDownloadExportCode')) {
+  $('btnDownloadExportCode').addEventListener('click', function(){
+    var updated = $('exportedCodeArea').value || buildUpdatedHtmlSource();
+    triggerDownloadIndexHtml(updated);
+    showToast('ดาวน์โหลดไฟล์ index.html แล้ว');
+  });
+}
+
+if ($('codeExportClose')) {
+  $('codeExportClose').addEventListener('click', function(){
+    if (typeof codeExportDlg.close === 'function') codeExportDlg.close();
+    else codeExportDlg.removeAttribute('open');
+  });
+}
+
+// Initial Render
+applyLanguage(STATE.lang);
+restartAutoTimer();
+</script></body></html>
